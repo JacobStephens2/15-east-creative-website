@@ -3,14 +3,16 @@ import { graphql, Link } from 'gatsby';
 import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
-import Call from '../components/Call';
+import Button from '../components/Button';
 
 const Home = props => {
   const intro = props.data.intro;
   const site = props.data.site.siteMetadata;
-  const services = props.data.services.edges;
+  const expertResults = props.data.expertResults;
+  const greatPartnerships = props.data.greatPartnerships;
   const features = props.data.features.edges;
-  const introImageClasses = `intro-image ${intro.frontmatter.intro_image_absolute && 'intro-image-absolute'} ${intro.frontmatter.intro_image_hide_on_mobile && 'intro-image-hide-mobile'}`;
+  const introImageClasses = `intro-image ${intro.frontmatter.intro_image_absolute && 'intro-image-absolute'} 
+    ${intro.frontmatter.intro_image_hide_on_mobile && 'intro-image-hide-mobile'}`;
 
   return (
     <Layout bodyClass="page-home">
@@ -18,28 +20,38 @@ const Home = props => {
       <Helmet>
         <meta
           name="description"
-          content="Small Business Theme. Multiple content types using Markdown and JSON sources. Responsive design and SCSS. This is a beautiful and artfully designed starting theme."
+          content="15 East Creative's Website. We create graphics, layouts, and websites."
         />
       </Helmet>
 
       <div className="intro">
         <div className="container">
           <div className="row justify-content-start">
-            <div className="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-              <div dangerouslySetInnerHTML={{ __html: intro.html }} />
-              <Call showButton />
+            <div className="col-12 col-md-8 col-lg-10 order-2 order-md-1">
+              <h1>{intro.frontmatter.header}</h1>
             </div>
-            {intro.frontmatter.intro_image && (
-              <div className="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+            <div className="col-12 col-md-6 col-lg-7 order-2 order-md-1">
+              <div dangerouslySetInnerHTML={{ __html: intro.html }} />
+            </div>
                 <img alt={intro.frontmatter.title} className={introImageClasses} src={intro.frontmatter.intro_image} />
-              </div>
-            )}
+          </div>
+        </div>
+      </div>
+
+      <div className="section">
+        <div className="container">
+          <div className="row justify-content-start">
+            <div className="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+              <h1>{expertResults.frontmatter.title}</h1>  
+              <div dangerouslySetInnerHTML={{ __html: expertResults.html }} />
+              <Button name={expertResults.frontmatter.buttonText} target={expertResults.frontmatter.target} />
+            </div>
           </div>
         </div>
       </div>
 
       {features.length > 0 && (
-        <div className="strip strip-grey">
+        <div className="strip">
           <div className="container pt-6 pb-6 pt-md-10 pb-md-10">
             <div className="row justify-content-center">
               {features.map(({ node }) => (
@@ -60,31 +72,17 @@ const Home = props => {
         </div>
       )}
 
-      {services.length > 0 && (
-        <div className="strip">
-          <div className="container pt-6 pb-6 pb-md-10">
-            <div className="row justify-content-start">
-              {services.map(({ node }) => (
-                <div key={node.id} className="col-12 col-md-4 mb-1">
-                  <div className="service service-summary">
-                    <div className="service-content">
-                      <h2 className="service-title">
-                        <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-                      </h2>
-                      <p>{node.excerpt}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="row justify-content-center">
-              <div className="col-auto">
-                <Link className="button button-primary" to="/services/">About Us</Link>
-              </div>
+      <div className="section">
+        <div className="container">
+          <div className="row justify-content-start">
+            <div className="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+              <h1>{greatPartnerships.frontmatter.title}</h1>  
+              <div dangerouslySetInnerHTML={{ __html: greatPartnerships.html }} />
+              <Button name={greatPartnerships.frontmatter.buttonText} target={greatPartnerships.frontmatter.target} />
             </div>
           </div>
         </div>
-      )}
+      </div>
 
     </Layout>
   );
@@ -102,6 +100,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            weight
             date(formatString: "DD MMMM YYYY")
           }
           fields {
@@ -111,12 +110,33 @@ export const query = graphql`
         }
       }
     }
+    expertResults: markdownRemark(
+      fileAbsolutePath: {regex: "/content/sections/expert-results.md/"}
+    ) {
+        html
+        frontmatter {
+          title
+          buttonText
+          target
+        }
+    }
+    greatPartnerships: markdownRemark(
+      fileAbsolutePath: {regex: "/content/sections/great-partnerships.md/"}
+    ) {
+        html
+        frontmatter {
+          title
+          buttonText
+          target
+        }
+    }
     intro: markdownRemark(
       fileAbsolutePath: {regex: "/content/index.md/"}
     ) {
         html
         frontmatter {
           image
+          header
           intro_image
           intro_image_absolute
           intro_image_hide_on_mobile

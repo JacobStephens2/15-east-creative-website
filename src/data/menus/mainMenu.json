@@ -1,13 +1,13 @@
 [
     {
-        "name": "PORTFOLIO",
-        "url": "/services/",
-        "weight": 2
-    },
-    {
         "name": "ABOUT",
         "url": "/team/",
         "weight": 3
+    },
+    {
+        "name": "PORTFOLIO",
+        "url": "/services/",
+        "weight": 2
     },
     {
         "name": "CONTACT",
