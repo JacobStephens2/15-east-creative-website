@@ -1,10 +1,10 @@
 ---
 title: 'Home'
-intro_image: "/images/illustrations/pointing.svg"
+intro_image: "/images/illustrations/AdobeStock_211464287_Preview.jpeg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-# Serif - A Hugo Business Theme.
+# graphic design. | web design.
 
-Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+expert results and great partnerships

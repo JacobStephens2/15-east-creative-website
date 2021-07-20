@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-serif-theme",
-  "version": "1.0.1",
-  "author": "Robert Austin <rob@zerostatic.io>",
+  "name": "15-east-website",
+  "version": "1.0.0",
+  "author": "Jacob Stephens <jacob@15eastcreative.com>",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",

@@ -1,10 +1,10 @@
 ---
-title: 'Team'
+title: 'ABOUT'
 intro_image: ""
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
-# Meet The Team
+# about us.
 
-Our team of qualified accountants and financial consultants can help your business at any stage of it's growth.
+We are a creative team that meets product needs.

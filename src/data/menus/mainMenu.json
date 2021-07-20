@@ -1,21 +1,16 @@
 [
     {
-        "name": "Services",
+        "name": "PORTFOLIO",
         "url": "/services/",
         "weight": 2
     },
     {
-        "name": "Team",
+        "name": "ABOUT",
         "url": "/team/",
         "weight": 3
     },
     {
-        "name": "About",
-        "url": "/about/",
-        "weight": 4
-    },
-    {
-        "name": "Contact",
+        "name": "CONTACT",
         "url": "/contact/",
         "weight": 5
     }

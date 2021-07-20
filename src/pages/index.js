@@ -38,32 +38,6 @@ const Home = props => {
         </div>
       </div>
 
-      {services.length > 0 && (
-        <div className="strip">
-          <div className="container pt-6 pb-6 pb-md-10">
-            <div className="row justify-content-start">
-              {services.map(({ node }) => (
-                <div key={node.id} className="col-12 col-md-4 mb-1">
-                  <div className="service service-summary">
-                    <div className="service-content">
-                      <h2 className="service-title">
-                        <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-                      </h2>
-                      <p>{node.excerpt}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="row justify-content-center">
-              <div className="col-auto">
-                <Link className="button button-primary" to="/services/">View All Services</Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
       {features.length > 0 && (
         <div className="strip strip-grey">
           <div className="container pt-6 pb-6 pt-md-10 pb-md-10">
@@ -85,6 +59,33 @@ const Home = props => {
           </div>
         </div>
       )}
+
+      {services.length > 0 && (
+        <div className="strip">
+          <div className="container pt-6 pb-6 pb-md-10">
+            <div className="row justify-content-start">
+              {services.map(({ node }) => (
+                <div key={node.id} className="col-12 col-md-4 mb-1">
+                  <div className="service service-summary">
+                    <div className="service-content">
+                      <h2 className="service-title">
+                        <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+                      </h2>
+                      <p>{node.excerpt}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="row justify-content-center">
+              <div className="col-auto">
+                <Link className="button button-primary" to="/services/">About Us</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
     </Layout>
   );
 };

@@ -10,7 +10,7 @@
     },
     "homepage_meta_tags": {
         "meta_description": "Serif is a modern business theme for Gatsby. It contains content types for the archetypical business website. The theme is fully responsive, blazing fast and artfully illustrated.",
-        "meta_og_title": "Gatsby Serif Theme",
+        "meta_og_title": "15 East Creative",
         "meta_og_type": "website",
         "meta_og_url": "https://hugo-gatsby.netlify.app",
         "meta_og_image": "https://www.zerostatic.io/theme/gatsby-serif/gatsby-serif-screenshot.png",
@@ -20,7 +20,7 @@
         "meta_twitter_creator": "@zerostaticio"
     },
     "footer": {
-        "copyright_text": "Free Gatsby theme by",
-        "copyright_link": "https://www.zerostatic.io"
+        "copyright_text": "© 2021 | 15 EAST CREATIVE | ALL RIGHTS RESERVED",
+        "copyright_link": ""
     }
 }
