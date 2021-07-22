@@ -7,4 +7,4 @@ buttonText: "FEATURED WORK"
 target: "/services"
 ---
 
-With our experience in design, print, and project management, we have provided clients with expertise and results that delight. We are a professional resource at every stage to partner with you in the design process for print or web.
+With our experience in design, print, and project management, we have provided clients with expertise and results that delight. We are a professional resource at every stage to partner with you in the design process for print or&nbsp;web.

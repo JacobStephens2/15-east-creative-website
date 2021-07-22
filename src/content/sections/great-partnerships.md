@@ -7,5 +7,5 @@ buttonText: "ABOUT US"
 target: "/team"
 ---
 
-Our team is very easy to work with to create the product. We are responsive throughout the entire collaboration. We are pretty great.
+Our team is very easy to work with to create the product. We are responsive throughout the entire collaboration. We are pretty&nbsp;great.
 

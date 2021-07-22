@@ -8,4 +8,4 @@ header: "graphic design. | web design."
 
 ## expert results and great partnerships
 
-We are a creative studio specializing in design, print, web, and project management. Melodee Stephens has over 40 years of experience collaborating with clients to create a variety of print products. Recently expanding to web design, we also create websites.
+We are a creative studio specializing in design, print, web, and project management. Melodee Stephens has over 40 years of experience collaborating with clients to create a variety of print products. Recently expanding to web design, we also create&nbsp;websites.
