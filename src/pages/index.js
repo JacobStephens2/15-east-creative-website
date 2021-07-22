@@ -5,12 +5,11 @@ import Carousel from 'react-bootstrap/Carousel';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
-import image01 from '../../static/images/illustrations/Asset-1-black.png';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = props => {
   const intro = props.data.intro;
   const site = props.data.site.siteMetadata;
+  const oliviaHaas = props.data.oliviaHaas;
   const expertResults = props.data.expertResults;
   const greatPartnerships = props.data.greatPartnerships;
   const features = props.data.features.edges;
@@ -89,35 +88,24 @@ const Home = props => {
 
       <Carousel>
         <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={image01}
-            alt="First slide"
-          />
+          <h1 className="carousel-header">kind words.</h1>
+          <p dangerouslySetInnerHTML={{ __html: oliviaHaas.html }}></p>
+          <p>{oliviaHaas.frontmatter.source}</p>
+
           <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={image01}
-            alt="Second slide"
-          />
-
+          <h1 className="carousel-header">kind words.</h1>
           <Carousel.Caption>
             <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={image01}
-            alt="Third slide"
-          />
-
+          <h1 className="carousel-header">kind words.</h1>
           <Carousel.Caption>
             <h3>Third slide label</h3>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -150,6 +138,12 @@ export const query = graphql`
         }
       }
     }
+    oliviaHaas: markdownRemark(frontmatter: {id: {eq: 1}}) {
+    html
+    frontmatter {
+      source
+    }
+  }
     expertResults: markdownRemark(
       fileAbsolutePath: {regex: "/content/sections/expert-results.md/"}
     ) {
