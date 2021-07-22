@@ -1,9 +1,12 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Helmet from 'react-helmet';
+import Carousel from 'react-bootstrap/Carousel';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
+import image01 from '../../static/images/illustrations/Asset-1-black.png';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = props => {
   const intro = props.data.intro;
@@ -33,7 +36,7 @@ const Home = props => {
             <div className="col-12 col-md-6 col-lg-7 order-2 order-md-1">
               <div dangerouslySetInnerHTML={{ __html: intro.html }} />
             </div>
-                <img alt={intro.frontmatter.title} className={introImageClasses} src={intro.frontmatter.intro_image} />
+            <img alt={intro.frontmatter.title} className={introImageClasses} src={intro.frontmatter.intro_image} />
           </div>
         </div>
       </div>
@@ -41,7 +44,7 @@ const Home = props => {
       <div className="section">
         <div className="container">
           <div className="row justify-content-start">
-            <div className="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+            <div className="col-12 col-md-9 col-lg-8 order-2 order-md-1">
               <h1>{expertResults.frontmatter.title}</h1>  
               <div dangerouslySetInnerHTML={{ __html: expertResults.html }} />
               <Button name={expertResults.frontmatter.buttonText} target={expertResults.frontmatter.target} />
@@ -75,7 +78,7 @@ const Home = props => {
       <div className="section">
         <div className="container">
           <div className="row justify-content-start">
-            <div className="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+            <div className="col-12 col-md-9 col-lg-8 order-2 order-md-1">
               <h1>{greatPartnerships.frontmatter.title}</h1>  
               <div dangerouslySetInnerHTML={{ __html: greatPartnerships.html }} />
               <Button name={greatPartnerships.frontmatter.buttonText} target={greatPartnerships.frontmatter.target} />
@@ -84,6 +87,43 @@ const Home = props => {
         </div>
       </div>
 
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={image01}
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={image01}
+            alt="Second slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={image01}
+            alt="Third slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
     </Layout>
   );
 };
