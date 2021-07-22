@@ -1,6 +1,6 @@
 ---
 title: 'Home'
-intro_image: "/images/illustrations/AdobeStock_211464287_Preview-circle.png"
+intro_image: "/images/illustrations/AdobeStock_211464287_Preview-circle-logo.png"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 header: "graphic design. | web design."

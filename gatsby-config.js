@@ -1,4 +1,4 @@
-const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
+const guid = process.env.GOOGLE_ANALYTICS_ID;
 
 module.exports = {
   siteMetadata: {
@@ -29,6 +29,14 @@ module.exports = {
       options: {
         path: `${__dirname}/src/data`,
         name: 'data'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID
+        }
       }
     },
     {

@@ -1,6 +1,7 @@
 // Colors
-$primary: #8c7122; // Not enough contrast on white for WCAG AAA normal text, but is WCAG AAA for large text
-$secondary: #808181;
+$primary: #8c7122; // #8c7122 gold does not have enough contrast on white for WCAG AAA normal text, but is WCAG AAA for large text
+$secondary: #757575; // #8081881 original grey not AAA for large text, so #757575 grey darker used instead
+$tertiary: #54565b; // dark grey used in menu text
 $black: #000000;
 $white: #ffffff;
 $white-offset: #edede9;
@@ -13,8 +14,8 @@ $link-hover-color: lighten($primary, 20%);
 $link-hover-decoration: underline;
 
 // Fonts
-$font-family-base: Helvetica, Arial, sans-serif, -apple-system;
-$font-family-heading: "Playfair Display", serif, -apple-system;
+$font-family-base: "Brandon Grotesque", sans-serif, -apple-system;
+$font-family-heading: "Operetta 12", serif, -apple-system;
 
 // Footer
 $footer-background-color: $primary;
