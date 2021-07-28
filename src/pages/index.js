@@ -9,9 +9,9 @@ import Button from '../components/Button';
 const Home = props => {
   const intro = props.data.intro;
   const site = props.data.site.siteMetadata;
-  const testimonials = props.data.testimonials;
   const expertResults = props.data.expertResults;
   const greatPartnerships = props.data.greatPartnerships;
+  const testimonials = props.data.testimonials;
   const features = props.data.features.edges;
   const introImageClasses = `intro-image ${intro.frontmatter.intro_image_absolute && 'intro-image-absolute'} 
     ${intro.frontmatter.intro_image_hide_on_mobile && 'intro-image-hide-mobile'}`;
@@ -88,13 +88,18 @@ const Home = props => {
 
       <Carousel>
         <Carousel.Item>
-          <h1 className="carousel-header">kind words.</h1>
-        </Carousel.Item>
-        <Carousel.Item>
-          <h1 className="carousel-header">kind words.</h1>
-        </Carousel.Item>
-        <Carousel.Item>
-          <h1 className="carousel-header">kind words.</h1>
+        <div>
+          {
+          testimonials.nodes.map((node) => (
+            <article key={node.id}>
+              <h1 className="carousel-header">kind words.</h1>
+              <h2>{node.frontmatter._1.name}</h2>
+              <h3>{node.frontmatter._1.role}</h3>
+              <p>{node.frontmatter._1.quote}</p>
+            </article>
+          ))
+          }
+        </div>
         </Carousel.Item>
       </Carousel>
     </Layout>
@@ -103,26 +108,6 @@ const Home = props => {
 
 export const query = graphql`
   query {
-    services: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/services\/.*/" } }
-      sort: { fields: [frontmatter___weight], order: ASC }
-      limit: 6
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            weight
-            date(formatString: "DD MMMM YYYY")
-          }
-          fields {
-            slug
-          }
-          excerpt
-        }
-      }
-    }
     expertResults: markdownRemark(
       fileAbsolutePath: {regex: "/content/sections/expert-results.md/"}
     ) {
@@ -145,19 +130,20 @@ export const query = graphql`
     }
     testimonials: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/testimonials/*/"}}) {
     nodes {
+      id
+      html
       frontmatter {
-        one {
+        _1 {
           name
           role
           quote
         }
-        two {
+        _2 {
           name
           role
           quote
         }
       }
-      id
     }
   }
   intro: markdownRemark(

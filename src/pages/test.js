@@ -1,29 +1,42 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-const ComponentName = ({ data }) => <pre>{JSON.stringify(data, null, 4)}</pre>
+const HomePage = ({ data }) => {
+  return (
+    <div>
+      {
+      data.allMarkdownRemark.nodes.map((node) => (
+        <article key={node.id}>
+          <h2>{node.frontmatter.one.name}</h2>
+          <h3>{node.frontmatter.one.role}</h3>
+          <p>{node.frontmatter.one.quote}</p>
+        </article>
+      ))
+      }
+    </div>
+  )
+}
 
 export const query = graphql`
-  {
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/testimonials/*/"}}) {
-      nodes {
-        frontmatter {
-          one {
-            name
-            role
-            quote
-          }
-          two {
-            name
-            role
-            quote
-          }
+query TestimonialsTwo {
+  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/testimonials/*/"}}) {
+    nodes {
+      id
+      html
+      frontmatter {
+        one {
+          name
+          role
+          quote
         }
-        id
+        two {
+          name
+          role
+          quote
+        }
       }
     }
   }
+}
 `
-
-export default ComponentName
-
+export default HomePage
