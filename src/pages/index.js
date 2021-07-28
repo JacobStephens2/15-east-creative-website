@@ -9,6 +9,7 @@ import Button from '../components/Button';
 const Home = props => {
   const intro = props.data.intro;
   const site = props.data.site.siteMetadata;
+  const testimonials = props.data.testimonials;
   const expertResults = props.data.expertResults;
   const greatPartnerships = props.data.greatPartnerships;
   const features = props.data.features.edges;
@@ -142,7 +143,24 @@ export const query = graphql`
           target
         }
     }
-    intro: markdownRemark(
+    testimonials: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/testimonials/*/"}}) {
+    nodes {
+      frontmatter {
+        one {
+          name
+          role
+          quote
+        }
+        two {
+          name
+          role
+          quote
+        }
+      }
+      id
+    }
+  }
+  intro: markdownRemark(
       fileAbsolutePath: {regex: "/content/index.md/"}
     ) {
         html
