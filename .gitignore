@@ -75,3 +75,5 @@ yarn-error.log
 # Other
 east-website-dce441249abe.json
 gatsby-config-google-sheets-hack.js
+.env.development
+.env.production
