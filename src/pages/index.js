@@ -92,8 +92,8 @@ const Home = props => {
             <Carousel.Item key={node.id}>
               <div className="quote-box">
                 <h1 className="carousel-header">kind words.</h1>
-                <p dangerouslySetInnerHTML={{ __html: node.html }}></p>
-                <p>{node.frontmatter.name}&ensp;&ensp;|&ensp;&ensp;{node.frontmatter.role}</p>
+                <p className="carousel-quote" dangerouslySetInnerHTML={{ __html: node.html }}></p>
+                <p className="carousel-quote-source">{node.frontmatter.name}&ensp;&ensp;|&ensp;&ensp;{node.frontmatter.role}</p>
               </div>
             </Carousel.Item>
           ))
