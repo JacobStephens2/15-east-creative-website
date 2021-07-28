@@ -14,7 +14,7 @@ const Home = props => {
   const testimonials = props.data.testimonials;
   const features = props.data.features.edges;
   const introImageClasses = `intro-image ${intro.frontmatter.intro_image_absolute && 'intro-image-absolute'} 
-    ${intro.frontmatter.intro_image_hide_on_mobile && 'intro-image-hide-mobile'}`;
+  ${intro.frontmatter.intro_image_hide_on_mobile && 'intro-image-hide-mobile'}`;
 
   return (
     <Layout bodyClass="page-home">
@@ -87,20 +87,17 @@ const Home = props => {
       </div>
 
       <Carousel>
-        <Carousel.Item>
-        <div>
           {
-          testimonials.nodes.map((node) => (
-            <article key={node.id}>
-              <h1 className="carousel-header">kind words.</h1>
-              <h2>{node.frontmatter._1.name}</h2>
-              <h3>{node.frontmatter._1.role}</h3>
-              <p>{node.frontmatter._1.quote}</p>
-            </article>
+            testimonials.nodes.map((node) => (
+            <Carousel.Item key={node.id}>
+              <div className="quote-box">
+                <h1 className="carousel-header">kind words.</h1>
+                <p dangerouslySetInnerHTML={{ __html: node.html }}></p>
+                <p>{node.frontmatter.name}&ensp;&ensp;|&ensp;&ensp;{node.frontmatter.role}</p>
+              </div>
+            </Carousel.Item>
           ))
           }
-        </div>
-        </Carousel.Item>
       </Carousel>
     </Layout>
   );
@@ -128,22 +125,14 @@ export const query = graphql`
           target
         }
     }
-    testimonials: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/testimonials/*/"}}) {
+  testimonials: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/testimonials/*/"}}) {
     nodes {
-      id
-      html
       frontmatter {
-        _1 {
-          name
-          role
-          quote
-        }
-        _2 {
-          name
-          role
-          quote
-        }
+        role
+        name
       }
+      html
+      id
     }
   }
   intro: markdownRemark(
