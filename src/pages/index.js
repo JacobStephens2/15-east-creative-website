@@ -61,7 +61,7 @@ const Home = props => {
                 <div key={node.id} className="col-12 col-md-6 col-lg-3 col-xl-3 mb-2">
                   <div className="feature">
                     <div className={node.class}></div>
-                    <h2 className="feature-title">{node.title}</h2>
+                    <h3 className="feature-title">{node.title}</h3>
                     <div className="feature-content" dangerouslySetInnerHTML={{ __html: node.description }} ></div>
                   </div>
                 </div>
