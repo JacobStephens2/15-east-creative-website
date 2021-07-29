@@ -29,10 +29,10 @@ const Home = props => {
       <div className="intro">
         <div className="container">
           <div className="row justify-content-start">
-            <div className="col-12 col-md-8 col-lg-10 order-2 order-md-1">
+            <div className="col-12 col-md-10 col-lg-10 order-1 order-md-1">
               <h1>{intro.frontmatter.header}</h1>
             </div>
-            <div className="col-12 col-md-6 col-lg-7 order-2 order-md-1">
+            <div className="col-12 col-md-9 col-lg-7 order-1 order-md-1">
               <div dangerouslySetInnerHTML={{ __html: intro.html }} />
             </div>
             <img alt={intro.frontmatter.title} className={introImageClasses} src={intro.frontmatter.intro_image} />

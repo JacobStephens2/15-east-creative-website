@@ -1,3 +1,5 @@
+$paddingRight: 3%;
+
 .intro-image {
 	width: 90%;
 	height: auto;
@@ -8,24 +10,27 @@
 	position: absolute;
 	z-index: 2;
 	padding: 0;
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-down(md) {
 	}
 	@include media-breakpoint-up(md) {
-		bottom: -50px;
-		left: -30px;
-		width: 700px;
+		bottom: 120px;
+		left: 60%;
+		width: 40%;
+		padding-right: $paddingRight;
 	}
 	@include media-breakpoint-up(lg) {
 		bottom: -60px;
-		left: 650px;
-		width: 800px;
+		left: 60%;
+		width: 40%;
 		top: 400px;
+		padding-right: $paddingRight;
 	}
 	@include media-breakpoint-up(xl) {
 		bottom: -100px;
-		left: 800px;
-		width: 750px;
+		left: 60%;
+		width: 40%;
 		top: 400px;
+		padding-right: $paddingRight;
 	}
 }
 .intro-image-hide-mobile {
