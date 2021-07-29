@@ -71,8 +71,8 @@ const Home = props => {
         </div>
       )}
 
-      <div className="section">
-        <div className="container">
+      <div className="section great-partnerships-background">
+        <div className="container height">
           <div className="row justify-content-start">
             <div className="col-12 col-md-9 col-lg-8 order-2 order-md-1">
               <h1>{greatPartnerships.frontmatter.title}</h1>  
