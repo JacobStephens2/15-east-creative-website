@@ -2,6 +2,8 @@
 $primary: #8c7122; // #8c7122 gold does not have enough contrast on white for WCAG AAA normal text, but is WCAG AAA for large text
 $secondary: #757575; // #8081881 original grey not AAA for large text, so #757575 grey darker used instead
 $tertiary: #54565b; // dark grey used in menu text
+$dark-gold: #b99b2d; // original primary with only enough contrast to decorate non-significant-informational components
+$gold: #dabd27; // original highlight gold
 $black: #000000;
 $white: #ffffff;
 $white-offset: #edede9;
@@ -83,10 +85,53 @@ body {
 	display: none;
 }
 
+.carousel-quote:before {
+	border-left: 3px solid $dark-gold;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	top: 10%;
+	right: -34%;
+	z-index: -5;
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+}
+.carousel-header:after {
+	content: "“";
+	font-family: $font-family-heading;
+	font-weight: bold;
+	font-size: 130px;
+	color: $gold;
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	top: -150%;
+	right: -37%;
+	z-index: -5;
+}
+.carousel-header {
+	margin-left: 9%;
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+}
+
 .carousel-quote,
 .carousel-quote-source {
-	margin: 0 15% 0 45%;
+	margin: 0 15% 0 44%;
+	@include media-breakpoint-down(lg) {
+		margin: 5% 12% 0;
+	}
 }
 .carousel-quote-source {
 	margin-bottom: 4%;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.9rem;
+	@include media-breakpoint-down(lg) {
+		margin-top: 0.3rem;
+		margin-bottom: 8%;
+	}
 }

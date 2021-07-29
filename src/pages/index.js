@@ -57,7 +57,7 @@ const Home = props => {
           <div className="container pt-6 pb-6 pt-md-10 pb-md-10">
             <div className="row justify-content-center">
               {features.map(({ node }) => (
-                <div key={node.id} className="col-12 col-md-6 col-lg-4 mb-2">
+                <div key={node.id} className="col-12 col-md-6 col-lg-2 col-xl-2 mb-2">
                   <div className="feature">
                     {node.image && (
                       <div className="feature-image">
@@ -99,6 +99,7 @@ const Home = props => {
           ))
           }
       </Carousel>
+      
     </Layout>
   );
 };
