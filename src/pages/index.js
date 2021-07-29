@@ -5,6 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
+import Img from "gatsby-image"
 
 const Home = props => {
   const intro = props.data.intro;
@@ -99,7 +100,7 @@ const Home = props => {
           ))
           }
       </Carousel>
-      
+
     </Layout>
   );
 };

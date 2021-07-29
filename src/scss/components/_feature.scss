@@ -9,8 +9,9 @@
 	text-align: center;
 	.feature-image {
 		flex: 0 0 auto;
-		width: 80px;
-		height: 80px;
+		width: 100%;
+		height: 150px;
+		background-size: cover;
 		display: flex;
 		margin-bottom: 20px;
 		text-align: center;
