@@ -2,9 +2,11 @@
   /*
    * Slider
    */
+  $primary: #8c7122; // #8c7122 gold does not have enough contrast on white for WCAG AAA normal text, but is WCAG AAA for large text
+
   .hamburger--slider {
     .hamburger-inner {
-      top: $hamburger-layer-height / 2;
+      top: $hamburger-layer-height;
 
       &::before {
         top: $hamburger-layer-height + $hamburger-layer-spacing;
@@ -25,7 +27,12 @@
         transform: translate3d(0, $y-offset, 0) rotate(45deg);
 
         &::before {
-          transform: rotate(-45deg) translate3d($hamburger-layer-width / -7, $hamburger-layer-spacing * -1, 0);
+          transform: rotate(-45deg)
+            translate3d(
+              $hamburger-layer-width,
+              $hamburger-layer-spacing * -1,
+              0
+            );
           opacity: 0;
         }
 

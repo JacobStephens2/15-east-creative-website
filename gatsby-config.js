@@ -1,6 +1,5 @@
 /* eslint-disable comma-dangle */
 /* eslint-disable quotes */
-const guid = process.env.GATSBY_GOOGLE_ANALYTICS_ID;
 
 module.exports = {
   siteMetadata: {
@@ -8,7 +7,14 @@ module.exports = {
     description: "15 East Creative Graphic and Web Design Studio Website",
   },
   plugins: [
-    "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        sassOptions: {
+          includePaths: ["scss"],
+        },
+      },
+    },
     "gatsby-transformer-json",
     "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
@@ -59,14 +65,6 @@ module.exports = {
         typekit: {
           id: process.env.TYPEKIT_ID,
         },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: guid || "UA-XXX-1",
-        // Puts tracking script in the head instead of the body
-        head: false,
       },
     },
     {

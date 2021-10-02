@@ -14,6 +14,7 @@ $hamburger-padding-y: 15px !default;
 $hamburger-layer-width: 36px;
 $hamburger-layer-height: 3px !default;
 $hamburger-layer-spacing: 7px;
+$primary: #8c7122; // #8c7122 gold does not have enough contrast on white for WCAG AAA normal text, but is WCAG AAA for large text
 $hamburger-layer-color: $primary !default;
 $hamburger-layer-border-radius: 3px !default;
 $hamburger-hover-opacity: 0.7 !default;
@@ -65,7 +66,7 @@ $hamburger-types: (
 
 // Base Hamburger (We need this)
 // ==================================================
-@import 'base';
+@import "base";
 
 // Hamburger types
 // ==================================================
@@ -89,7 +90,7 @@ $hamburger-types: (
 // @import "types/emphatic";
 // @import "types/emphatic-r";
 // @import "types/minus";
-@import 'types/slider';
+@import "types/slider";
 // @import "types/slider-r";
 // @import "types/spin";
 // @import "types/spin-r";
