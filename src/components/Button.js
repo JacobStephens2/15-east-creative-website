@@ -1,11 +1,14 @@
-import React from 'react';
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-const Button = props => {
+const Button = (props) => {
   return (
-    <div className="call-box-bottom">
-      <Link to={props.target} className="button">{props.name}</Link>
-    </div>
+    <Link to={props.target}>
+      <button name={props.buttonText}>
+        {props.buttonText}
+        <div id="triangle-right"></div>
+      </button>
+    </Link>
   );
 };
 

@@ -52,11 +52,10 @@ const Home = (props) => {
             <div className="col-12 col-md-9 col-lg-8 order-2 order-md-1">
               <h1>{expertResults.frontmatter.title}</h1>
               <div dangerouslySetInnerHTML={{ __html: expertResults.html }} />
-              <Link to={expertResults.frontmatter.target}>
-                <button name={expertResults.frontmatter.buttonText}>
-                  {expertResults.frontmatter.buttonText}
-                </button>
-              </Link>
+              <Button
+                target={expertResults.frontmatter.target}
+                buttonText={expertResults.frontmatter.buttonText}
+              />
             </div>
           </div>
         </div>
@@ -94,11 +93,10 @@ const Home = (props) => {
               <div
                 dangerouslySetInnerHTML={{ __html: greatPartnerships.html }}
               />
-              <Link to={greatPartnerships.frontmatter.target}>
-                <button name={greatPartnerships.frontmatter.buttonText}>
-                  {greatPartnerships.frontmatter.buttonText}
-                </button>
-              </Link>
+              <Button
+                target={greatPartnerships.frontmatter.target}
+                buttonText={greatPartnerships.frontmatter.buttonText}
+              />
             </div>
           </div>
         </div>

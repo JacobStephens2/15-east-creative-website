@@ -7491,6 +7491,8 @@ ol li {
   flex-direction: column;
   text-align: center;
   background-size: cover;
+  display: flex;
+  align-items: flex-start;
 }
 .feature .feature-image {
   flex: 0 0 auto;
@@ -7724,4 +7726,18 @@ button {
   background-color: var(--primary);
   color: var(--white);
   border: none;
+}
+
+:root {
+  --triangle-width: 0.4rem;
+}
+
+#triangle-right {
+  width: 0;
+  height: 0;
+  border-top: var(--triangle-width) solid transparent;
+  border-left: calc(var(--triangle-width) * 1.7) solid var(--white);
+  border-bottom: var(--triangle-width) solid transparent;
+  display: inline-block;
+  margin-left: 0.6rem;
 }
