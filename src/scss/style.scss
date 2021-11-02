@@ -72,115 +72,115 @@ $carousel-minimum-height: 495px;
 @import "pages/services/page-services-single";
 
 body {
-	font-size: 16px;
-	line-height: 1.2;
-	font-family: $font-family-base;
-	@include media-breakpoint-up(md) {
-		font-size: 16px;
-		line-height: 1.3;
-	}
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: $font-family-base;
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+    line-height: 1.3;
+  }
 }
 
 .visually-hidden {
-	display: none;
+  display: none;
 }
 
 .carousel-quote:before {
-	border-left: 3px solid $dark-gold;
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 60%;
-	top: 10%;
-	right: -34%;
-	z-index: -5;
-	@include media-breakpoint-down(lg) {
-		display: none;
-	}
+  border-left: 3px solid $dark-gold;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 10%;
+  right: -34%;
+  z-index: -5;
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
 }
 .carousel-header:after {
-	content: "“";
-	font-family: $font-family-heading;
-	font-weight: bold;
-	font-size: 130px;
-	color: $gold;
-	position: absolute;
-	width: 100%;
-	height: 60%;
-	top: -150%;
-	right: -37%;
-	z-index: -5;
+  content: "“";
+  font-family: $font-family-heading;
+  font-weight: bold;
+  font-size: 130px;
+  color: $gold;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: -150%;
+  right: -37%;
+  z-index: -5;
 }
 .carousel-header {
-	margin-left: 9%;
-	@include media-breakpoint-down(lg) {
-		display: none;
-	}
+  margin-left: 9%;
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
 }
 
 .carousel-quote,
 .carousel-quote-source {
-	margin: 0 15% 0 44%;
-	@include media-breakpoint-down(lg) {
-		margin: 5% 12% 0;
-	}
+  margin: 0 15% 0 44%;
+  @include media-breakpoint-down(lg) {
+    margin: 5% 12% 0;
+  }
 }
 .carousel-quote-source {
-	margin-bottom: 4%;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 0.9rem;
-	@include media-breakpoint-down(lg) {
-		margin-top: 0.3rem;
-		margin-bottom: 8%;
-	}
+  margin-bottom: 4%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+  @include media-breakpoint-down(lg) {
+    margin-top: 0.3rem;
+    margin-bottom: 8%;
+  }
 }
 
 .feature {
-	padding: 0;
+  padding: 0;
 }
 .feature-title {
-	text-transform: uppercase;
-	font-size: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 .feature-content {
-	text-align: left;
-	line-height: 1.5;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .expert-class {
-	background: url("/images/features/AdobeStock_102634177-expert.jpeg");
+  background: url("/images/features/AdobeStock_102634177-expert.jpeg");
 }
 .collaborative-class {
-	background: url("/images/features/AdobeStock_372199444-collaborative.jpeg");
+  background: url("/images/features/AdobeStock_372199444-collaborative.jpeg");
 }
 .personal-class {
-	background: url("/images/features/AdobeStock_410984936_personal.jpeg");
+  background: url("/images/features/AdobeStock_410984936_personal.jpeg");
 }
 .detailed-class {
-	background: url("/images/features/AdobeStock_164146969-detailed.jpeg");
+  background: url("/images/features/AdobeStock_164146969-detailed.jpeg");
 }
 .imaginative-class {
-	background: url("/images/features/AdobeStock_6440051-imaginative.jpeg");
+  background: url("/images/features/AdobeStock_6440051-imaginative.jpeg");
 }
 
 .great-partnerships-background {
-	position: relative;
+  position: relative;
 }
 
 .great-partnerships-background:before {
-	content: " ";
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	opacity: 0.15;
-	background: url("/images/jacob-at-desk.jpg");
-	background-size: cover;
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  background: url("/images/jacob-at-desk.jpg");
+  background-size: cover;
 }
 
 .height {
-	z-index: 5;
+  z-index: 5;
 }

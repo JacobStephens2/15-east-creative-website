@@ -1,21 +1,22 @@
-import React from 'react';
-import { graphql, Link } from 'gatsby';
-import Helmet from 'react-helmet';
-import Carousel from 'react-bootstrap/Carousel';
-import SEO from '../components/SEO';
-import Layout from '../components/Layout';
-import Button from '../components/Button';
-import Img from "gatsby-image"
+import React from "react";
+import { graphql, Link } from "gatsby";
+import Helmet from "react-helmet";
+import Carousel from "react-bootstrap/Carousel";
+import SEO from "../components/SEO";
+import Layout from "../components/Layout";
+import Button from "../components/Button";
 
-const Home = props => {
+const Home = (props) => {
   const intro = props.data.intro;
   const site = props.data.site.siteMetadata;
   const expertResults = props.data.expertResults;
   const greatPartnerships = props.data.greatPartnerships;
   const testimonials = props.data.testimonials;
   const features = props.data.features.edges;
-  const introImageClasses = `intro-image ${intro.frontmatter.intro_image_absolute && 'intro-image-absolute'} 
-  ${intro.frontmatter.intro_image_hide_on_mobile && 'intro-image-hide-mobile'}`;
+  const introImageClasses = `intro-image ${
+    intro.frontmatter.intro_image_absolute && "intro-image-absolute"
+  } 
+  ${intro.frontmatter.intro_image_hide_on_mobile && "intro-image-hide-mobile"}`;
 
   return (
     <Layout bodyClass="page-home">
@@ -36,7 +37,11 @@ const Home = props => {
             <div className="col-12 col-md-9 col-lg-7 order-1 order-md-1">
               <div dangerouslySetInnerHTML={{ __html: intro.html }} />
             </div>
-            <img alt={intro.frontmatter.title} className={introImageClasses} src={intro.frontmatter.intro_image} />
+            <img
+              alt={intro.frontmatter.title}
+              className={introImageClasses}
+              src={intro.frontmatter.intro_image}
+            />
           </div>
         </div>
       </div>
@@ -45,9 +50,13 @@ const Home = props => {
         <div className="container">
           <div className="row justify-content-start">
             <div className="col-12 col-md-9 col-lg-8 order-2 order-md-1">
-              <h1>{expertResults.frontmatter.title}</h1>  
+              <h1>{expertResults.frontmatter.title}</h1>
               <div dangerouslySetInnerHTML={{ __html: expertResults.html }} />
-              <Button name={expertResults.frontmatter.buttonText} target={expertResults.frontmatter.target} />
+              <Link to={expertResults.frontmatter.target}>
+                <button name={expertResults.frontmatter.buttonText}>
+                  {expertResults.frontmatter.buttonText}
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -58,11 +67,17 @@ const Home = props => {
           <div className="container pt-6 pb-6 pt-md-10 pb-md-10">
             <div className="row justify-content-center">
               {features.map(({ node }) => (
-                <div key={node.id} className="col-12 col-md-6 col-lg-3 col-xl-3 mb-2">
+                <div
+                  key={node.id}
+                  className="col-12 col-md-6 col-lg-3 col-xl-3 mb-2"
+                >
                   <div className="feature">
                     <div className={node.class}></div>
                     <h3 className="feature-title">{node.title}</h3>
-                    <div className="feature-content" dangerouslySetInnerHTML={{ __html: node.description }} ></div>
+                    <div
+                      className="feature-content"
+                      dangerouslySetInnerHTML={{ __html: node.description }}
+                    ></div>
                   </div>
                 </div>
               ))}
@@ -75,28 +90,37 @@ const Home = props => {
         <div className="container height">
           <div className="row justify-content-start">
             <div className="col-12 col-md-9 col-lg-8 order-2 order-md-1">
-              <h1>{greatPartnerships.frontmatter.title}</h1>  
-              <div dangerouslySetInnerHTML={{ __html: greatPartnerships.html }} />
-              <Button name={greatPartnerships.frontmatter.buttonText} target={greatPartnerships.frontmatter.target} />
+              <h1>{greatPartnerships.frontmatter.title}</h1>
+              <div
+                dangerouslySetInnerHTML={{ __html: greatPartnerships.html }}
+              />
+              <Link to={greatPartnerships.frontmatter.target}>
+                <button name={greatPartnerships.frontmatter.buttonText}>
+                  {greatPartnerships.frontmatter.buttonText}
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
 
       <Carousel>
-          {
-            testimonials.nodes.map((node) => (
-            <Carousel.Item key={node.id}>
-              <div className="quote-box">
-                <h1 className="carousel-header">kind words.</h1>
-                <div className="carousel-quote" dangerouslySetInnerHTML={{ __html: node.html }}></div>
-                <p className="carousel-quote-source">{node.frontmatter.name}&ensp;&ensp;|&ensp;&ensp;{node.frontmatter.role}</p>
-              </div>
-            </Carousel.Item>
-          ))
-          }
+        {testimonials.nodes.map((node) => (
+          <Carousel.Item key={node.id}>
+            <div className="quote-box">
+              <h1 className="carousel-header">kind words.</h1>
+              <div
+                className="carousel-quote"
+                dangerouslySetInnerHTML={{ __html: node.html }}
+              ></div>
+              <p className="carousel-quote-source">
+                {node.frontmatter.name}&ensp;&ensp;|&ensp;&ensp;
+                {node.frontmatter.role}
+              </p>
+            </div>
+          </Carousel.Item>
+        ))}
       </Carousel>
-
     </Layout>
   );
 };
@@ -104,47 +128,47 @@ const Home = props => {
 export const query = graphql`
   query {
     expertResults: markdownRemark(
-      fileAbsolutePath: {regex: "/content/sections/expert-results.md/"}
+      fileAbsolutePath: { regex: "/content/sections/expert-results.md/" }
     ) {
-        html
-        frontmatter {
-          title
-          buttonText
-          target
-        }
+      html
+      frontmatter {
+        title
+        buttonText
+        target
+      }
     }
     greatPartnerships: markdownRemark(
-      fileAbsolutePath: {regex: "/content/sections/great-partnerships.md/"}
+      fileAbsolutePath: { regex: "/content/sections/great-partnerships.md/" }
     ) {
-        html
-        frontmatter {
-          title
-          buttonText
-          target
-        }
-    }
-  testimonials: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/testimonials/*/"}}) {
-    nodes {
-      frontmatter {
-        role
-        name
-      }
       html
-      id
+      frontmatter {
+        title
+        buttonText
+        target
+      }
     }
-  }
-  intro: markdownRemark(
-      fileAbsolutePath: {regex: "/content/index.md/"}
+    testimonials: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/testimonials/*/" } }
     ) {
-        html
+      nodes {
         frontmatter {
-          image
-          header
-          intro_image
-          intro_image_absolute
-          intro_image_hide_on_mobile
-          title
+          role
+          name
         }
+        html
+        id
+      }
+    }
+    intro: markdownRemark(fileAbsolutePath: { regex: "/content/index.md/" }) {
+      html
+      frontmatter {
+        image
+        header
+        intro_image
+        intro_image_absolute
+        intro_image_hide_on_mobile
+        title
+      }
     }
     features: allFeaturesJson {
       edges {
