@@ -7,6 +7,7 @@
   --white-offset: hsl(60, 10%, 92%);
   --black: hsl(0, 0%, 0%);
 
+  --medium-font: 1rem;
   --small-font: 0.85rem;
   --very-small-font: 0.75rem;
 }
@@ -6792,10 +6793,15 @@ ol li {
 
 .footer {
   background: var(--white-offset);
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
   font-size: 2rem;
 }
+
+.footer-inner {
+  margin-bottom: 1rem;
+}
+
 .footer .footer-inner {
   display: flex;
   justify-content: space-between;
@@ -6803,10 +6809,29 @@ ol li {
   align-items: flex-start;
   font-size: var(--small-font);
 }
-.footer a {
+.footer .footer-inner a {
   color: var(--steel);
   text-transform: uppercase;
 }
+
+.footer-contact-info a {
+  font-size: var(--medium-font);
+  color: var(--black);
+}
+
+.footer hr {
+  max-width: 4rem;
+  margin-left: calc(var(--bs-gutter-x) * 0.5);
+  color: var(--primary);
+  height: 3px;
+  opacity: 1;
+  margin-bottom: 1.7rem;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+}
+
 @media (min-width: 576px) {
   .footer .footer-inner {
     justify-content: space-between;
