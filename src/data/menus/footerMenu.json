@@ -1,12 +1,12 @@
 [
-    {
-        "name": "Home",
-        "url": "/",
-        "weight": 1
-    },
-    {
-        "name": "Contact",
-        "url": "/contact/",
-        "weight": 2
-    }
+  {
+    "name": "About",
+    "url": "/about",
+    "weight": 1
+  },
+  {
+    "name": "Portfolio",
+    "url": "/portfolio",
+    "weight": 2
+  }
 ]

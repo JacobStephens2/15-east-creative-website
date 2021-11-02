@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
 
+// # props
+//
+// - target: the link destination
+// - buttonText: a string with the text the button will display
+
 const Button = (props) => {
   return (
     <Link to={props.target}>
