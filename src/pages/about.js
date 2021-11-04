@@ -4,6 +4,7 @@ import SEO from "../components/SEO";
 import Layout from "../components/Layout";
 import ButtonExternal from "../components/ButtonExternal";
 import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 
 const About = (props) => {
   const team = props.data.team.edges;
@@ -69,6 +70,37 @@ const About = (props) => {
             </div>
           </div>
         ))}
+
+      <Container
+        style={{ paddingTop: `1rem`, paddingBottom: `1rem` }}
+        id="capabilities"
+      >
+        <h2>capabilities</h2>
+        <div style={{ display: `flex` }}>
+          <div>
+            <h3>Print</h3>
+            <ul style={{ columns: `2` }}>
+              <li>Photography/Art Books</li>
+              <li>Catalogs</li>
+              <li>Magazines</li>
+              <li>Print Collateral</li>
+              <li>Product Packaging</li>
+              <li>Brand Identity</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Web&ensp;&ensp;|&ensp;&ensp;Digital</h3>
+            <ul style={{ columns: `2` }}>
+              <li>Website Design</li>
+              <li>WordPress</li>
+              <li>Efficiency Improvements</li>
+              <li>Web Hosting</li>
+              <li>Website Refresh</li>
+              <li>Performance, Accessibility, and SEO</li>
+            </ul>
+          </div>
+        </div>
+      </Container>
     </Layout>
   );
 };

@@ -7825,7 +7825,6 @@ button:focus {
   padding-right: 0.6rem;
   flex-direction: column;
   justify-content: center;
-  max-height: 4rem;
 }
 
 .button-component {
@@ -7836,4 +7835,16 @@ button:focus {
 .footer-logo-image {
   max-height: 4rem;
   padding-bottom: 1rem;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:last-of-type {
+  margin-bottom: 1rem;
 }
