@@ -7,6 +7,15 @@ import Col from "react-bootstrap/Col";
 const Footer = (props) => {
   const data = useStaticQuery(graphql`
     query FooterQuery {
+      footerData: markdownRemark(
+        fileAbsolutePath: { regex: "/content/footer.md/" }
+      ) {
+        id
+        html
+        frontmatter {
+          intro_image
+        }
+      }
       allFooterMenuJson {
         edges {
           node {
@@ -27,7 +36,10 @@ const Footer = (props) => {
     <div className="footer">
       <div className="container">
         <Row>
-          <Col md={1}></Col>
+          <Col md={1}>
+            <img src={data.footerData.frontmatter.intro_image} />
+          </Col>
+
           <Col>
             <div className="row">
               <div className="col-12">

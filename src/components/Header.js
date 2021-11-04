@@ -1,22 +1,20 @@
-import React from 'react';
-import { graphql, Link, StaticQuery } from 'gatsby';
-import Menu from './Menu';
-import Hamburger from './Hamburger';
-// import logo from '../../static/images/logo/logo.svg';
-// import logoMobile from '../../static/images/logo/logo-mobile.svg';
-import MenuMobile from './MenuMobile';
+import React from "react";
+import { graphql, Link, StaticQuery } from "gatsby";
+import Menu from "./Menu";
+import Hamburger from "./Hamburger";
+import MenuMobile from "./MenuMobile";
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuActive: false
+      menuActive: false,
     };
   }
 
-  toggleMenu = menuActive => {
-    this.setState(prevState => ({
-      menuActive: !prevState.menuActive
+  toggleMenu = (menuActive) => {
+    this.setState((prevState) => ({
+      menuActive: !prevState.menuActive,
     }));
   };
 
@@ -27,12 +25,20 @@ class Header extends React.Component {
         <div className="container">
           <div className="logo">
             <Link to="/">
-              <img height={config.logo.desktop_height} alt={config.logo.alt} src={config.logo.desktop} />
+              <img
+                height={config.logo.desktop_height}
+                alt={config.logo.alt}
+                src={config.logo.desktop}
+              />
             </Link>
           </div>
           <div className="logo-mobile">
             <Link to="/">
-              <img height={config.logo.desktop_height} alt={config.logo.alt} src={config.logo.mobile} />
+              <img
+                height={config.logo.desktop_height}
+                alt={config.logo.alt}
+                src={config.logo.mobile}
+              />
             </Link>
           </div>
           <MenuMobile active={this.state.menuActive} />
@@ -58,7 +64,7 @@ const props = () => (
         }
       }
     `}
-    render={data => <Header data={data} />}
+    render={(data) => <Header data={data} />}
   />
 );
 
