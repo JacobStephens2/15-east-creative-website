@@ -36,7 +36,15 @@ const Footer = (props) => {
     <div className="footer">
       <div className="container">
         <Row>
-          <Col md={1}>
+          <Col
+            style={{
+              display: `flex`,
+              marginRight: `1rem`,
+              paddingLeft: `0.6rem`,
+              paddingRight: `0.6rem`,
+            }}
+            md={1}
+          >
             <img src={data.footerData.frontmatter.intro_image} />
           </Col>
 
