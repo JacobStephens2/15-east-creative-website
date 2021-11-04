@@ -7600,12 +7600,7 @@ ol li {
   flex-direction: row;
 }
 .team-summary .team-image {
-  height: 60px;
-  width: 60px;
   margin-right: 10px;
-}
-.team-summary .team-image img {
-  width: 60px;
 }
 .team-summary .team-meta {
   flex: 1;
@@ -7633,14 +7628,12 @@ ol li {
   border-radius: 3px;
 }
 .team-summary-large .team-image {
-  height: 90px;
-  width: 90px;
   margin-right: 20px;
-  border-radius: 50%;
-  overflow: hidden;
 }
-.team-summary-large .team-image img {
-  width: 90px;
+
+.profile-image {
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 .page-services-single .content > p:first-of-type {
@@ -7822,6 +7815,7 @@ button:focus {
   padding-right: 0.6rem;
   flex-direction: column;
   justify-content: center;
+  max-height: 4rem;
 }
 
 .button-external {

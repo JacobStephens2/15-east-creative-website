@@ -1,6 +1,6 @@
 ---
 name: "Jacob Stephens"
-title: "JACOB STEPHENS  |  WEB DESIGNER AND DEVELOPER"
+title: "JACOB STEPHENS  |  WEB DESIGNER AND&nbsp;DEVELOPER"
 date: 2018-11-19T10:47:58+10:00
 draft: false
 image: "/images/team/AdobeStock_167815740_Preview.jpg"

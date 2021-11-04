@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import SEO from "../components/SEO";
 import Layout from "../components/Layout";
 import ButtonExternal from "../components/ButtonExternal";
+import Col from "react-bootstrap/Col";
 
 const About = (props) => {
   const team = props.data.team.edges;
@@ -36,41 +37,38 @@ const About = (props) => {
         </div>
       </div>
 
-      <div className="container">
-        <div className="row">
-          {team
-            .filter((edge) => edge.node.frontmatter.promoted)
-            .map(({ node }) => (
-              <div key={node.id} className="col-12 col-md-12 mb-2">
-                <div className="team team-summary team-summary-large">
-                  {node.frontmatter.image && (
-                    <div className="team-image">
-                      <img
-                        alt={`photo of ${node.frontmatter.title}`}
-                        className="img-fluid mb-2"
-                        src={node.frontmatter.image}
-                      />
-                    </div>
-                  )}
-                  <div className="team-meta">
-                    <h2 className="team-name">{node.frontmatter.title}</h2>
-                    <p className="team-description">
-                      {node.frontmatter.jobtitle}
-                    </p>
-                    <div
-                      dangerouslySetInnerHTML={{ __html: node.html }}
-                      className="team-content"
-                    ></div>
-                  </div>
-                  <ButtonExternal
-                    buttonText={`Email ${node.frontmatter.name}`}
-                    target={`mailto:${node.frontmatter.email}`}
-                  ></ButtonExternal>
-                </div>
-              </div>
-            ))}
-        </div>
-      </div>
+      {team
+        .filter((edge) => edge.node.frontmatter.promoted)
+        .map(({ node }) => (
+          <div key={node.id} className="col-12 col-md-12">
+            <div className="team team-summary team-summary-large">
+              <Col sm={12} md={6} className="team-image">
+                {node.frontmatter.image && (
+                  <img
+                    alt={`photo of ${node.frontmatter.title}`}
+                    className="img-fluid mb-2 profile-image"
+                    src={node.frontmatter.image}
+                  />
+                )}
+              </Col>
+              <Col sm={12} md={6} className="team-meta">
+                <h2
+                  className="team-name"
+                  dangerouslySetInnerHTML={{ __html: node.frontmatter.title }}
+                ></h2>
+                <p className="team-description">{node.frontmatter.jobtitle}</p>
+                <div
+                  dangerouslySetInnerHTML={{ __html: node.html }}
+                  className="team-content"
+                ></div>
+                <ButtonExternal
+                  buttonText={`Email ${node.frontmatter.name}`}
+                  target={`mailto:${node.frontmatter.email}`}
+                ></ButtonExternal>
+              </Col>
+            </div>
+          </div>
+        ))}
     </Layout>
   );
 };
