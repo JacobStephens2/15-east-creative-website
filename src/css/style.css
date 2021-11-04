@@ -7599,6 +7599,11 @@ ol li {
   flex-wrap: wrap;
   flex-direction: row;
 }
+
+.team-meta {
+  max-width: 70ch;
+}
+
 .team-summary .team-image {
   margin-right: 10px;
 }
@@ -7612,9 +7617,6 @@ ol li {
 }
 .team-summary .team-meta p {
   color: #000000;
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 12px;
   font-weight: 500;
 }
 .team-summary .team-content {
