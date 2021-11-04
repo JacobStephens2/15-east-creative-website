@@ -38,7 +38,10 @@ const Footer = (props) => {
         <Row>
           <Col className="footer-logo" md={1}>
             <Link to="/">
-              <img src={data.footerData.frontmatter.intro_image} />
+              <img
+                className="footer-logo-image"
+                src={data.footerData.frontmatter.intro_image}
+              />
             </Link>
           </Col>
 
