@@ -7816,3 +7816,12 @@ button:focus {
   display: inline-block;
   margin-left: 0.6rem;
 }
+
+.footer-logo {
+    display: flex;
+    margin-right: 1rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    flex-direction: column;
+    justify-content: center;
+}
