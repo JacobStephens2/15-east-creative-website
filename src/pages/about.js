@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import ButtonExternal from "../components/ButtonExternal";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
+import KindWords from "../components/KindWords";
 
 const About = (props) => {
   const team = props.data.team.edges;
@@ -101,6 +102,10 @@ const About = (props) => {
           </div>
         </div>
       </Container>
+
+      <div className="grey-bar"></div>
+
+      <KindWords />
     </Layout>
   );
 };

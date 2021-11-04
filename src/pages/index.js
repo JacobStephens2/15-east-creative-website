@@ -1,17 +1,16 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Helmet from "react-helmet";
-import Carousel from "react-bootstrap/Carousel";
 import SEO from "../components/SEO";
 import Layout from "../components/Layout";
 import Button from "../components/Button";
+import KindWords from "../components/KindWords";
 
 const Home = (props) => {
   const intro = props.data.intro;
   const site = props.data.site.siteMetadata;
   const expertResults = props.data.expertResults;
   const greatPartnerships = props.data.greatPartnerships;
-  const testimonials = props.data.testimonials;
   const features = props.data.features.edges;
   const introImageClasses = `intro-image ${
     intro.frontmatter.intro_image_absolute && "intro-image-absolute"
@@ -102,23 +101,7 @@ const Home = (props) => {
         </div>
       </div>
 
-      <Carousel>
-        {testimonials.nodes.map((node) => (
-          <Carousel.Item key={node.id}>
-            <div className="quote-box">
-              <h1 className="carousel-header">kind words.</h1>
-              <div
-                className="carousel-quote"
-                dangerouslySetInnerHTML={{ __html: node.html }}
-              ></div>
-              <p className="carousel-quote-source">
-                {node.frontmatter.name}&ensp;&ensp;|&ensp;&ensp;
-                {node.frontmatter.role}
-              </p>
-            </div>
-          </Carousel.Item>
-        ))}
-      </Carousel>
+      <KindWords />
     </Layout>
   );
 };
@@ -143,18 +126,6 @@ export const query = graphql`
         title
         buttonText
         target
-      }
-    }
-    testimonials: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/testimonials/*/" } }
-    ) {
-      nodes {
-        frontmatter {
-          role
-          name
-        }
-        html
-        id
       }
     }
     intro: markdownRemark(fileAbsolutePath: { regex: "/content/index.md/" }) {

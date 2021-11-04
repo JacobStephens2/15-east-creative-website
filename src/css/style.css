@@ -7848,3 +7848,8 @@ li {
 li:last-of-type {
   margin-bottom: 1rem;
 }
+
+.grey-bar {
+  height: 4rem;
+  background-color: var(--white-offset);
+}
