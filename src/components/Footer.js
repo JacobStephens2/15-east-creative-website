@@ -2,6 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
 import Button from "./Button";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const Footer = (props) => {
   const data = useStaticQuery(graphql`
