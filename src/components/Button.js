@@ -9,7 +9,7 @@ import { Link } from "gatsby";
 const Button = (props) => {
   return (
     <Link to={props.target}>
-      <button class="button-external" name={props.buttonText}>
+      <button class="button-component" name={props.buttonText}>
         {props.buttonText}
         <div id="triangle-right"></div>
       </button>

@@ -3,7 +3,7 @@ name: "Jacob Stephens"
 title: "JACOB STEPHENS  |  WEB DESIGNER AND&nbsp;DEVELOPER"
 date: 2018-11-19T10:47:58+10:00
 draft: false
-image: "/images/team/AdobeStock_167815740_Preview.jpg"
+image: "/images/team/Mel_Brand_CC-001-jacob-closeup-smile.jpg"
 jobtitle: "Learner. Strategic. Creative."
 promoted: true
 email: "jacob@15eastcreative.com"

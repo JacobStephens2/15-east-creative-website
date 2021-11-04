@@ -3,7 +3,7 @@ name: "Melodee Stephens"
 title: "MELODEE DILL STEPHENS | DESIGNER"
 date: 2018-11-19T10:47:58+10:00
 draft: false
-image: "/images/team/AdobeStock_270391306_Preview.jpg"
+image: "/images/team/Mel_Brand_CC-005-mel-smile-portrait.jpg"
 jobtitle: "Experienced. Versatile. Detail oriented."
 promoted: true
 email: "melodee@15eastcreative.com"
