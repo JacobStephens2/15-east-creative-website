@@ -8,7 +8,7 @@ import React from "react";
 const Button = (props) => {
   return (
     <a href={props.target}>
-      <button name={props.buttonText}>
+      <button class="button-external" name={props.buttonText}>
         {props.buttonText}
         <div id="triangle-right"></div>
       </button>

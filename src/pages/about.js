@@ -3,7 +3,6 @@ import { graphql } from "gatsby";
 import SEO from "../components/SEO";
 import Layout from "../components/Layout";
 import ButtonExternal from "../components/ButtonExternal";
-import { StaticImage } from "gatsby-plugin-image";
 
 const About = (props) => {
   const team = props.data.team.edges;
@@ -58,11 +57,11 @@ const About = (props) => {
                     <p className="team-description">
                       {node.frontmatter.jobtitle}
                     </p>
+                    <div
+                      dangerouslySetInnerHTML={{ __html: node.html }}
+                      className="team-content"
+                    ></div>
                   </div>
-                  <div
-                    dangerouslySetInnerHTML={{ __html: node.html }}
-                    className="team-content"
-                  ></div>
                   <ButtonExternal
                     buttonText={`Email ${node.frontmatter.name}`}
                     target={`mailto:${node.frontmatter.email}`}
