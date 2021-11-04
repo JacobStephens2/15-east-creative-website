@@ -2,6 +2,8 @@ import React from "react";
 import { graphql } from "gatsby";
 import SEO from "../components/SEO";
 import Layout from "../components/Layout";
+import ButtonExternal from "../components/ButtonExternal";
+import { StaticImage } from "gatsby-plugin-image";
 
 const About = (props) => {
   const team = props.data.team.edges;
@@ -40,7 +42,7 @@ const About = (props) => {
           {team
             .filter((edge) => edge.node.frontmatter.promoted)
             .map(({ node }) => (
-              <div key={node.id} className="col-12 col-md-6 mb-2">
+              <div key={node.id} className="col-12 col-md-12 mb-2">
                 <div className="team team-summary team-summary-large">
                   {node.frontmatter.image && (
                     <div className="team-image">
@@ -56,45 +58,15 @@ const About = (props) => {
                     <p className="team-description">
                       {node.frontmatter.jobtitle}
                     </p>
-                    {node.frontmatter.linkedin && (
-                      <a target="_blank" href="{{ .Params.Linkedinurl }}">
-                        LinkedIn
-                      </a>
-                    )}
                   </div>
-                  <div className="team-content">
-                    <p>{node.excerpt}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-        </div>
-        <div className="row pt-6 pb-6">
-          {team
-            .filter((edge) => !edge.node.frontmatter.promoted)
-            .map(({ node }) => (
-              <div key={node.id} className="col-12 col-md-6 mb-2">
-                <div className="team team-summary">
-                  {node.frontmatter.image && (
-                    <div className="team-image">
-                      <img
-                        alt={`photo of ${node.frontmatter.title}`}
-                        className="img-fluid mb-2"
-                        src={node.frontmatter.image}
-                      />
-                    </div>
-                  )}
-                  <div className="team-meta">
-                    <h2 className="team-name">{node.frontmatter.title}</h2>
-                    <p className="team-description">
-                      {node.frontmatter.jobtitle}
-                    </p>
-                    {node.frontmatter.linkedin && (
-                      <a target="_blank" href="{{ .Params.Linkedinurl }}">
-                        LinkedIn
-                      </a>
-                    )}
-                  </div>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: node.html }}
+                    className="team-content"
+                  ></div>
+                  <ButtonExternal
+                    buttonText={`Email ${node.frontmatter.name}`}
+                    target={`mailto:${node.frontmatter.email}`}
+                  ></ButtonExternal>
                 </div>
               </div>
             ))}
@@ -117,12 +89,14 @@ export const query = graphql`
           fields {
             slug
           }
+          html
           frontmatter {
             title
             promoted
             image
             jobtitle
-            linkedinurl
+            name
+            email
           }
         }
       }
