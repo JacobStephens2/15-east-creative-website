@@ -7646,6 +7646,11 @@ ol li {
   max-height: 400px;
 }
 
+.portfolio-main-image {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
 .page-services-single .content > p:first-of-type {
   font-size: 1.6rem;
   line-height: 1.4;

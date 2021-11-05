@@ -47,12 +47,14 @@ const Portfolio = (props) => {
                       {edge.node.frontmatter.status}
                     </span>
                   </h3>
-                  <h2>
-                    <Link to={edge.node.fields.slug}>
-                      {edge.node.frontmatter.title}
-                    </Link>
-                  </h2>
-                  <p>{edge.node.excerpt}</p>
+                  <Link to={edge.node.fields.slug}>
+                    <h2>{edge.node.frontmatter.title}</h2>
+                    <img
+                      alt={`photo of ${edge.node.frontmatter.title}`}
+                      className="img-fluid mb-2 portfolio-main-image"
+                      src={edge.node.frontmatter.mainImage}
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -72,7 +74,6 @@ export const query = graphql`
       edges {
         node {
           id
-          excerpt
           fields {
             slug
           }
@@ -80,6 +81,7 @@ export const query = graphql`
             title
             type
             status
+            mainImage
           }
         }
       }
