@@ -3,7 +3,6 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 
 const Service = ({ data }) => {
-  const { title } = data.markdownRemark.frontmatter;
   const { html } = data.markdownRemark;
   return (
     <Layout bodyClass="page-services-single">
@@ -11,10 +10,15 @@ const Service = ({ data }) => {
         <div className="row justify-content-start">
           <div className="col-12 col-md-8">
             <div className="service service-single">
-              <h1 className="title">{title}</h1>
+              <h1 className="title">{data.markdownRemark.frontmatter.title}</h1>
               <div
                 className="content"
                 dangerouslySetInnerHTML={{ __html: html }}
+              />
+              <img
+                alt={`Photo of ${data.markdownRemark.frontmatter.title}`}
+                className="img-fluid mb-2 portfolio-main-image"
+                src={data.markdownRemark.frontmatter.mainImage}
               />
             </div>
           </div>
@@ -29,6 +33,7 @@ export const query = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        mainImage
       }
       fields {
         slug
