@@ -7,7 +7,7 @@ image: "/images/team/Mel_Brand_CC-001-jacob-closeup-smile.jpg"
 jobtitle: "Learner. Strategic. Creative."
 promoted: true
 email: "jacob@15eastcreative.com"
-weight: 2
+weight: 1
 ---
 
 Joining the team in 2019, Jacob brought website development to 15 East and expanded 15 East's graphic design capacity to produce more and higher quality&nbsp;products.

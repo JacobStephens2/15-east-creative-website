@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path");
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 // Generate slug field for all markdown files
@@ -9,7 +9,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: `slug`,
-      value: slug
+      value: slug,
     });
   }
 };
@@ -23,7 +23,7 @@ exports.createPages = ({ graphql, actions }) => {
         `
           query {
             services: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "content/services\/.*/" } }
+              filter: { fileAbsolutePath: { regex: "content/portfolio/.*/" } }
               sort: { fields: [frontmatter___date], order: DESC }
             ) {
               edges {
@@ -32,26 +32,6 @@ exports.createPages = ({ graphql, actions }) => {
                   excerpt
                   frontmatter {
                     title
-                    date(formatString: "DD MMMM YYYY")
-                  }
-                  fields {
-                    slug
-                  }
-                }
-              }
-            }
-            team: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "content/team\/.*/" } }
-              sort: { fields: [frontmatter___date], order: DESC }
-            ) {
-              edges {
-                node {
-                  id
-                  excerpt
-                  frontmatter {
-                    title
-                    promoted
-                    image
                     date(formatString: "DD MMMM YYYY")
                   }
                   fields {
@@ -61,7 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
             basic: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "content/basic\/.*/" } }
+              filter: { fileAbsolutePath: { regex: "content/basic/.*/" } }
             ) {
               edges {
                 node {
@@ -80,43 +60,39 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
           }
-        `,
-      ).then(result => {
+        `
+      ).then((result) => {
         result.data.services.edges.forEach(({ node }) => {
-          const component = path.resolve('src/templates/service.js');
+          const component = path.resolve("src/templates/portfolio-sample.js");
           createPage({
-            path: node.frontmatter.path ? node.frontmatter.path : node.fields.slug,
+            path: node.frontmatter.path
+              ? node.frontmatter.path
+              : node.fields.slug,
             component,
             context: {
-              id: node.id
-            }
-          });
-        });
-        result.data.team.edges.forEach(({ node }) => {
-          const component = path.resolve('src/templates/team.js');
-          createPage({
-            path: node.frontmatter.path ? node.frontmatter.path : node.fields.slug,
-            component,
-            context: {
-              id: node.id
-            }
+              id: node.id,
+            },
           });
         });
         result.data.basic.edges.forEach(({ node }) => {
-          let component = path.resolve('src/templates/basic.js');
+          let component = path.resolve("src/templates/basic.js");
           if (node.frontmatter.template) {
-            component = path.resolve(`src/templates/${node.frontmatter.template}.js`);
+            component = path.resolve(
+              `src/templates/${node.frontmatter.template}.js`
+            );
           }
           createPage({
-            path: node.frontmatter.path ? node.frontmatter.path : node.fields.slug,
+            path: node.frontmatter.path
+              ? node.frontmatter.path
+              : node.fields.slug,
             component,
             context: {
-              id: node.id
-            }
+              id: node.id,
+            },
           });
         });
         resolve();
-      }),
+      })
     );
   });
 };
