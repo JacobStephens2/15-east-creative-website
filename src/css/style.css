@@ -7850,6 +7850,11 @@ li {
 }
 
 .grey-bar {
-  height: 4rem;
+  min-height: 4rem;
   background-color: var(--white-offset);
+}
+
+.section-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }

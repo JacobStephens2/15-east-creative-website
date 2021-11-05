@@ -72,10 +72,7 @@ const About = (props) => {
           </div>
         ))}
 
-      <Container
-        style={{ paddingTop: `1rem`, paddingBottom: `1rem` }}
-        id="capabilities"
-      >
+      <Container id="capabilities" className="section-container">
         <h2>capabilities</h2>
         <div style={{ display: `flex` }}>
           <div>
@@ -103,7 +100,37 @@ const About = (props) => {
         </div>
       </Container>
 
-      <div className="grey-bar"></div>
+      <div className="grey-bar">
+        <Container className="section-container">
+          <h2>select client list</h2>
+          <p>
+            The Agnes Irwin School&ensp;&ensp;|&ensp;&ensp;Archmere
+            Academy&ensp;&ensp;|&ensp;&ensp;Biomass
+            Controls&ensp;&ensp;|&ensp;&ensp;Brandywine Oak
+            Wealth&ensp;&ensp;|&ensp;&ensp;Brilliant
+            Graphics&ensp;&ensp;|&ensp;&ensp;Chester County Life, Superior
+            Publications&ensp;&ensp;|&ensp;&ensp;Delaware Valley Friends
+            School&ensp;&ensp;|&ensp;&ensp;Esperanza
+            College&ensp;&ensp;|&ensp;&ensp;French & Pickering Creeks
+            Conservation Trust&ensp;&ensp;|&ensp;&ensp;Gallery 47, Perfume
+            Bottle Auction&ensp;&ensp;|&ensp;&ensp;Grand American
+            Tours&ensp;&ensp;|&ensp;&ensp;Hartzell’s Auction
+            Gallery&ensp;&ensp;|&ensp;&ensp;Historic Yellow
+            Springs&ensp;&ensp;|&ensp;&ensp;Kimberton Waldorf
+            School&ensp;&ensp;|&ensp;&ensp;Montgomery
+            School&ensp;&ensp;|&ensp;&ensp;National Coalition of Girls’
+            Schools&ensp;&ensp;|&ensp;&ensp;Professional Baseball Team,
+            Philadelphia&ensp;&ensp;|&ensp;&ensp;Please Touch
+            Museum&ensp;&ensp;|&ensp;&ensp;Sacred Heart
+            Academy&ensp;&ensp;|&ensp;&ensp;Somerville Manning
+            Gallery&ensp;&ensp;|&ensp;&ensp;Stoltzfus
+            Enterprises&ensp;&ensp;|&ensp;&ensp;St. Peter’s
+            School&ensp;&ensp;|&ensp;&ensp;The Nature
+            Conservancy&ensp;&ensp;|&ensp;&ensp;United States Tennis
+            Association, Middle States&ensp;&ensp;|&ensp;&ensp;Wheaton Academy
+          </p>
+        </Container>
+      </div>
 
       <KindWords />
     </Layout>
