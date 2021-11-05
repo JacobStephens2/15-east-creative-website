@@ -7845,8 +7845,13 @@ li {
   list-style-type: none;
 }
 
+#capabilities li {
+  padding-bottom: 1rem;
+}
+
 #capabilities li:last-of-type {
   margin-bottom: 1rem;
+  padding-bottom: 0;
 }
 
 .grey-bar {
@@ -7855,6 +7860,11 @@ li {
 }
 
 .section-container {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.capabilities-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

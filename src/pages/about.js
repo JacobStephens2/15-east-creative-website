@@ -74,7 +74,7 @@ const About = (props) => {
 
       <Container id="capabilities" className="section-container">
         <h2>capabilities</h2>
-        <div style={{ display: `flex` }}>
+        <div className="capabilities-container">
           <div>
             <h3>Print</h3>
             <ul style={{ columns: `2` }}>
@@ -87,7 +87,7 @@ const About = (props) => {
             </ul>
           </div>
           <div>
-            <h3>Web&ensp;&ensp;|&ensp;&ensp;Digital</h3>
+            <h3>Web&ensp;|&ensp;Digital</h3>
             <ul style={{ columns: `2` }}>
               <li>Website Design</li>
               <li>WordPress</li>
@@ -101,7 +101,7 @@ const About = (props) => {
       </Container>
 
       <div className="grey-bar">
-        <Container className="section-container">
+        <Container id="client-list" className="section-container">
           <h2>select client list</h2>
           <p>
             &nbsp;The&nbsp;Agnes&nbsp;Irwin&nbsp;&nbsp;School&ensp;&ensp;|&ensp;&ensp;Archmere&nbsp;&nbsp;Academy&ensp;&ensp;|&ensp;&ensp;Biomass&nbsp;&nbsp;Controls&ensp;&ensp;|&ensp;&ensp;Brandywine&nbsp;Oak&nbsp;&nbsp;Wealth&ensp;&ensp;|&ensp;&ensp;Brilliant&nbsp;&nbsp;Graphics&ensp;&ensp;|&ensp;&ensp;Chester&nbsp;County&nbsp;&nbsp;Life,&nbsp;Superior&nbsp;&nbsp;Publications&ensp;&ensp;|&ensp;&ensp;Delaware&nbsp;Valley&nbsp;&nbsp;Friends&nbsp;School&ensp;&ensp;|&ensp;&ensp;Esperanza&nbsp;&nbsp;College&ensp;&ensp;|&ensp;&ensp;French&nbsp;&&nbsp;Pickering&nbsp;&nbsp;Creeks&nbsp;Conservation&nbsp;&nbsp;Trust&ensp;&ensp;|&ensp;&ensp;Gallery&nbsp;47,&nbsp;Perfume&nbsp;&nbsp;Bottle&nbsp;Auction&ensp;&ensp;|&ensp;&ensp;Grand&nbsp;&nbsp;American&nbsp;Tours&ensp;&ensp;|&ensp;&ensp;Hartzell’s&nbsp;&nbsp;Auction&nbsp;Gallery&ensp;&ensp;|&ensp;&ensp;Historic&nbsp;&nbsp;Yellow&nbsp;Springs&ensp;&ensp;|&ensp;&ensp;Kimberton&nbsp;&nbsp;Waldorf&nbsp;School&ensp;&ensp;|&ensp;&ensp;Montgomery&nbsp;&nbsp;School&ensp;&ensp;|&ensp;&ensp;National&nbsp;Coalition&nbsp;&nbsp;of&nbsp;Girls’&nbsp;Schools&ensp;&ensp;|&ensp;&ensp;Professional&nbsp;Baseball&nbsp;Team,&nbsp;Philadelphia&ensp;&ensp;|&ensp;&ensp;Please&nbsp;&nbsp;Touch&nbsp;Museum&ensp;&ensp;|&ensp;&ensp;Sacred&nbsp;Heart&nbsp;&nbsp;Academy&ensp;&ensp;|&ensp;&ensp;Somerville&nbsp;Manning&nbsp;&nbsp;Gallery&ensp;&ensp;|&ensp;&ensp;Stoltzfus&nbsp;&nbsp;Enterprises&ensp;&ensp;|&ensp;&ensp;St.&nbsp;Peter’s&nbsp;&nbsp;School&ensp;&ensp;|&ensp;&ensp;The&nbsp;Nature&nbsp;&nbsp;Conservancy&ensp;&ensp;|&ensp;&ensp;United&nbsp;States&nbsp;&nbsp;Tennis&nbsp;Association,&nbsp;Middle&nbsp;&nbsp;States&ensp;&ensp;|&ensp;&ensp;Wheaton&nbsp;Academy
