@@ -41,13 +41,15 @@ const Portfolio = (props) => {
             <div key={edge.node.id} className="col-12 col-md-4 mb-1">
               <div className="card service service-teaser">
                 <div className="card-content">
-                  <Link to={edge.node.fields.slug}>
-                    <img
-                      alt={`Photo of ${edge.node.frontmatter.title}`}
-                      className="img-fluid mb-2 portfolio-main-image"
-                      src={edge.node.frontmatter.mainImage}
-                    />
-                  </Link>
+                  <div className="portfolio-image-container">
+                    <Link to={edge.node.fields.slug}>
+                      <img
+                        alt={`Photo of ${edge.node.frontmatter.title}`}
+                        className="img-fluid mb-2 portfolio-main-image"
+                        src={edge.node.frontmatter.mainImage}
+                      />
+                    </Link>
+                  </div>
                   <h3>
                     {edge.node.frontmatter.type}
                     <span className="status">
