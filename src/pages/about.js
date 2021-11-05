@@ -104,30 +104,7 @@ const About = (props) => {
         <Container className="section-container">
           <h2>select client list</h2>
           <p>
-            The Agnes Irwin School&ensp;&ensp;|&ensp;&ensp;Archmere
-            Academy&ensp;&ensp;|&ensp;&ensp;Biomass
-            Controls&ensp;&ensp;|&ensp;&ensp;Brandywine Oak
-            Wealth&ensp;&ensp;|&ensp;&ensp;Brilliant
-            Graphics&ensp;&ensp;|&ensp;&ensp;Chester County Life, Superior
-            Publications&ensp;&ensp;|&ensp;&ensp;Delaware Valley Friends
-            School&ensp;&ensp;|&ensp;&ensp;Esperanza
-            College&ensp;&ensp;|&ensp;&ensp;French & Pickering Creeks
-            Conservation Trust&ensp;&ensp;|&ensp;&ensp;Gallery 47, Perfume
-            Bottle Auction&ensp;&ensp;|&ensp;&ensp;Grand American
-            Tours&ensp;&ensp;|&ensp;&ensp;Hartzell’s Auction
-            Gallery&ensp;&ensp;|&ensp;&ensp;Historic Yellow
-            Springs&ensp;&ensp;|&ensp;&ensp;Kimberton Waldorf
-            School&ensp;&ensp;|&ensp;&ensp;Montgomery
-            School&ensp;&ensp;|&ensp;&ensp;National Coalition of Girls’
-            Schools&ensp;&ensp;|&ensp;&ensp;Professional Baseball Team,
-            Philadelphia&ensp;&ensp;|&ensp;&ensp;Please Touch
-            Museum&ensp;&ensp;|&ensp;&ensp;Sacred Heart
-            Academy&ensp;&ensp;|&ensp;&ensp;Somerville Manning
-            Gallery&ensp;&ensp;|&ensp;&ensp;Stoltzfus
-            Enterprises&ensp;&ensp;|&ensp;&ensp;St. Peter’s
-            School&ensp;&ensp;|&ensp;&ensp;The Nature
-            Conservancy&ensp;&ensp;|&ensp;&ensp;United States Tennis
-            Association, Middle States&ensp;&ensp;|&ensp;&ensp;Wheaton Academy
+            &nbsp;The&nbsp;Agnes&nbsp;Irwin&nbsp;&nbsp;School&ensp;&ensp;|&ensp;&ensp;Archmere&nbsp;&nbsp;Academy&ensp;&ensp;|&ensp;&ensp;Biomass&nbsp;&nbsp;Controls&ensp;&ensp;|&ensp;&ensp;Brandywine&nbsp;Oak&nbsp;&nbsp;Wealth&ensp;&ensp;|&ensp;&ensp;Brilliant&nbsp;&nbsp;Graphics&ensp;&ensp;|&ensp;&ensp;Chester&nbsp;County&nbsp;&nbsp;Life,&nbsp;Superior&nbsp;&nbsp;Publications&ensp;&ensp;|&ensp;&ensp;Delaware&nbsp;Valley&nbsp;&nbsp;Friends&nbsp;School&ensp;&ensp;|&ensp;&ensp;Esperanza&nbsp;&nbsp;College&ensp;&ensp;|&ensp;&ensp;French&nbsp;&&nbsp;Pickering&nbsp;&nbsp;Creeks&nbsp;Conservation&nbsp;&nbsp;Trust&ensp;&ensp;|&ensp;&ensp;Gallery&nbsp;47,&nbsp;Perfume&nbsp;&nbsp;Bottle&nbsp;Auction&ensp;&ensp;|&ensp;&ensp;Grand&nbsp;&nbsp;American&nbsp;Tours&ensp;&ensp;|&ensp;&ensp;Hartzell’s&nbsp;&nbsp;Auction&nbsp;Gallery&ensp;&ensp;|&ensp;&ensp;Historic&nbsp;&nbsp;Yellow&nbsp;Springs&ensp;&ensp;|&ensp;&ensp;Kimberton&nbsp;&nbsp;Waldorf&nbsp;School&ensp;&ensp;|&ensp;&ensp;Montgomery&nbsp;&nbsp;School&ensp;&ensp;|&ensp;&ensp;National&nbsp;Coalition&nbsp;&nbsp;of&nbsp;Girls’&nbsp;Schools&ensp;&ensp;|&ensp;&ensp;Professional&nbsp;Baseball&nbsp;Team,&nbsp;Philadelphia&ensp;&ensp;|&ensp;&ensp;Please&nbsp;&nbsp;Touch&nbsp;Museum&ensp;&ensp;|&ensp;&ensp;Sacred&nbsp;Heart&nbsp;&nbsp;Academy&ensp;&ensp;|&ensp;&ensp;Somerville&nbsp;Manning&nbsp;&nbsp;Gallery&ensp;&ensp;|&ensp;&ensp;Stoltzfus&nbsp;&nbsp;Enterprises&ensp;&ensp;|&ensp;&ensp;St.&nbsp;Peter’s&nbsp;&nbsp;School&ensp;&ensp;|&ensp;&ensp;The&nbsp;Nature&nbsp;&nbsp;Conservancy&ensp;&ensp;|&ensp;&ensp;United&nbsp;States&nbsp;&nbsp;Tennis&nbsp;Association,&nbsp;Middle&nbsp;&nbsp;States&ensp;&ensp;|&ensp;&ensp;Wheaton&nbsp;Academy
           </p>
         </Container>
       </div>
