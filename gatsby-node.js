@@ -24,7 +24,7 @@ exports.createPages = ({ graphql, actions }) => {
           query {
             services: allMarkdownRemark(
               filter: { fileAbsolutePath: { regex: "content/portfolio/.*/" } }
-              sort: { fields: [frontmatter___date], order: DESC }
+              sort: { fields: [frontmatter___weight], order: ASC }
             ) {
               edges {
                 node {

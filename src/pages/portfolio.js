@@ -41,6 +41,13 @@ const Portfolio = (props) => {
             <div key={edge.node.id} className="col-12 col-md-4 mb-1">
               <div className="card service service-teaser">
                 <div className="card-content">
+                  <Link to={edge.node.fields.slug}>
+                    <img
+                      alt={`Photo of ${edge.node.frontmatter.title}`}
+                      className="img-fluid mb-2 portfolio-main-image"
+                      src={edge.node.frontmatter.mainImage}
+                    />
+                  </Link>
                   <h3>
                     {edge.node.frontmatter.type}
                     <span className="status">
@@ -49,11 +56,6 @@ const Portfolio = (props) => {
                   </h3>
                   <Link to={edge.node.fields.slug}>
                     <h2>{edge.node.frontmatter.title}</h2>
-                    <img
-                      alt={`photo of ${edge.node.frontmatter.title}`}
-                      className="img-fluid mb-2 portfolio-main-image"
-                      src={edge.node.frontmatter.mainImage}
-                    />
                   </Link>
                 </div>
               </div>
@@ -69,7 +71,7 @@ export const query = graphql`
   query ServicesQuery {
     services: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/content/portfolio/.*/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___weight], order: ASC }
     ) {
       edges {
         node {
