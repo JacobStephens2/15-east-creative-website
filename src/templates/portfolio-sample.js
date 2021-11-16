@@ -10,8 +10,9 @@ const Service = ({ data }) => {
         <div className="service service-single">
           <h1 className="title">{data.markdownRemark.frontmatter.type}</h1>
           <h2>
-            {data.markdownRemark.frontmatter.title} |{" "}
-            {data.markdownRemark.frontmatter.pages} pages
+            {data.markdownRemark.frontmatter.title}
+            {data.markdownRemark.frontmatter.pages > 0 &&
+              " | " + data.markdownRemark.frontmatter.pages + " pages"}
           </h2>
           <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
           <div className="portfolio-sample">
