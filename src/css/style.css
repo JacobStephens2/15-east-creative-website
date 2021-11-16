@@ -7942,6 +7942,6 @@ span.status {
     display: inherit;
   }
   .portfolio-sample .portfolio-image-container {
-    min-width: 449px;
+    min-width: 100%;
   }
 }
