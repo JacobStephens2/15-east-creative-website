@@ -2,6 +2,7 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import SEO from "../components/SEO";
 import Layout from "../components/Layout";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Portfolio = (props) => {
   const services = props.data.services.edges;
@@ -24,7 +25,7 @@ const Portfolio = (props) => {
             </div>
             {intro.frontmatter.intro_image && (
               <div className="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-                <img
+                <StaticImage
                   alt={intro.frontmatter.title}
                   className={introImageClasses}
                   src={intro.frontmatter.intro_image}
