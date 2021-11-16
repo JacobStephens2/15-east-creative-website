@@ -11,6 +11,9 @@
   --medium-font: 1rem;
   --small-font: 0.85rem;
   --very-small-font: 0.75rem;
+
+  --box-shadow: 3px 3px 16px hsl(100deg 5% 63% / 31%);
+  --sample-box-shadow: 3px 3px 16px hsl(100deg 7% 13% / 61%);
 }
 
 /*!
@@ -6955,7 +6958,7 @@ ol li {
 
 .logo-mobile {
   display: block;
-  width: 40px;
+  width: 60px;
   padding: 10px 0 10px 0;
 }
 
@@ -7648,7 +7651,7 @@ ol li {
 }
 
 .portfolio-main-image {
-  box-shadow: 3px 3px 16px hsl(100deg 5% 63% / 31%);
+  box-shadow: var(--box-shadow);
   max-height: 350px;
   margin-bottom: 0 !important;
 }
@@ -7896,4 +7899,41 @@ span.status {
   padding-left: 0.7rem;
   font-size: 1.1rem;
   color: var(--steel);
+}
+
+.portfolio-sample-images {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 0;
+  gap: 2rem;
+}
+.portfolio-sample-images .portfolio-main-image {
+  box-shadow: var(--box-shadow);
+}
+.portfolio-sample-images .portfolio-image-container {
+  padding: 0;
+  object-fit: contain;
+}
+.portfolio-sample-image-frame {
+  padding: 2rem;
+  background-color: var(--background-grey);
+}
+.portfolio-sample {
+  columns: 1;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-sample {
+    columns: 2;
+    gap: 2rem;
+  }
+}
+.portfolio-sample .portfolio-image-container {
+  min-height: 100px;
+  width: fit-content;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+.portfolio-sample .portfolio-main-image {
+  box-shadow: var(--sample-box-shadow);
 }
