@@ -6,6 +6,7 @@
   --steel: hsl(0, 1%, 36%);
   --white-offset: hsl(60, 10%, 92%);
   --black: hsl(0, 0%, 0%);
+  --background-grey: hsl(60deg 10% 92%);
 
   --medium-font: 1rem;
   --small-font: 0.85rem;
@@ -7653,11 +7654,14 @@ ol li {
 }
 
 .portfolio-image-container {
-  aspect-ratio: 1/1;
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: var(--background-grey);
+  align-items: center;
+  min-height: 382px;
+  padding: 1rem;
 }
 
 .page-services-single .content > p:first-of-type {
