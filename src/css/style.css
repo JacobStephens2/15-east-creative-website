@@ -7921,19 +7921,27 @@ span.status {
 }
 .portfolio-sample {
   columns: 1;
-}
-@media screen and (min-width: 768px) {
-  .portfolio-sample {
-    columns: 2;
-    gap: 2rem;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .portfolio-sample .portfolio-image-container {
-  min-height: 100px;
+  min-height: 414px;
+  min-width: min(710px, 100vw);
   width: fit-content;
   margin-bottom: 2rem;
   padding: 2rem;
 }
 .portfolio-sample .portfolio-main-image {
   box-shadow: var(--sample-box-shadow);
+}
+@media screen and (min-width: 992px) {
+  .portfolio-sample {
+    columns: 2;
+    gap: 2rem;
+    display: inherit;
+  }
+  .portfolio-sample .portfolio-image-container {
+    min-width: 449px;
+  }
 }
