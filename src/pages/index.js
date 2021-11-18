@@ -76,6 +76,7 @@ const Home = (props) => {
                 </div>
               ))}
             </div>
+            <Button target="/portfolio" buttonText="SEE MORE OF OUR WORK" />
           </div>
         </div>
       )}
