@@ -1,22 +1,27 @@
 [
   {
     "alt": "Roger Raepple Book Dust cover",
+    "link": "/portfolio/roger-raepple-remember/",
     "src": "/images/portfolio/BookRogerRaepple/DustJacket_v2-crop.jpg"
   },
   {
     "alt": "Archmere Academy magazine cover",
+    "link": "/portfolio/archmere-academy-magazine/",
     "src": "/images/portfolio/MagazineArchmereAcademy_Page_01-crop.png"
   },
   {
     "alt": "French & Pickering Conservation & Trust Land Matters magazine cover",
+    "link": "/portfolio/sourlands-conservancy-book/",
     "src": "/images/portfolio/FrenchAndPickering/LandMattersFall18cover.jpg"
   },
   {
     "alt": "Coach's Call desktop homepage",
+    "link": "/portfolio/coachs-call-website/",
     "src": "/images/portfolio/CoachsCall/gatsbyjs-io_golden-crop.png"
   },
   {
     "alt": "Chester County Life Magazine cover",
+    "link": "/portfolio/chester-county-life-magazine/",
     "src": "/images/portfolio/ChesterCountyLife/CCL_Page_001.jpg"
   }
 ]

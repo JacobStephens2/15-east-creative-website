@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Helmet from "react-helmet";
 import SEO from "../components/SEO";
 import Layout from "../components/Layout";
@@ -31,7 +31,7 @@ const Home = (props) => {
       <div className="intro">
         <div className="container">
           <div className="row justify-content-start">
-            <div className="col-12 col-md-10 col-lg-10 order-1 order-md-1">
+            <div className="col-12 col-md-10 col-lg-12 order-1 order-md-1">
               <h1>{intro.frontmatter.header}</h1>
             </div>
             <div className="col-12 col-md-9 col-lg-7 order-1 order-md-1">
@@ -66,12 +66,16 @@ const Home = (props) => {
           <div className="container pt-6 pb-6 pt-md-10 pb-md-10">
             <h1>but pretty isn't everything.</h1>
             <p>We get results, too.</p>
-            <div className="five-col-wide-row">
+            <div className="five-col-wide-row mb-2">
               {highlights.map(({ node }) => (
-                <div key={node.id} className="mb-2">
-                  <div className="feature">
-                    <img src={node.src} alt={node.alt}></img>
-                  </div>
+                <div key={node.id}>
+                  <Link to={node.link}>
+                    <img
+                      className="homepage-sample"
+                      src={node.src}
+                      alt={node.alt}
+                    ></img>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -100,9 +104,10 @@ const Home = (props) => {
       <div className="section great-partnerships-background">
         <div className="container height">
           <div className="row justify-content-start">
-            <div className="col-12 col-md-9 col-lg-8 order-2 order-md-1">
+            <div className="col-12 order-2 order-md-1">
               <h1>{greatPartnerships.frontmatter.title}</h1>
               <div
+                className="col-lg-9"
                 dangerouslySetInnerHTML={{ __html: greatPartnerships.html }}
               />
               <Button
@@ -167,6 +172,7 @@ export const query = graphql`
           id
           alt
           src
+          link
         }
       }
     }
