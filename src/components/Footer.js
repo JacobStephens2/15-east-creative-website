@@ -49,7 +49,7 @@ const Footer = (props) => {
             <div className="row">
               <div className="col-12">
                 <div className="footer-inner">
-                  <Link to="/">Home</Link>
+                  <Link to="/contact">CONTACT</Link>
 
                   <ul>
                     {data.allFooterMenuJson.edges.map(({ node }) => (

@@ -27,7 +27,6 @@ const KindWords = (props) => {
       {testimonials.nodes.map((node) => (
         <Carousel.Item key={node.id}>
           <div className="quote-box">
-            <h1 className="carousel-header">kind words.</h1>
             <div
               className="carousel-quote"
               dangerouslySetInnerHTML={{ __html: node.html }}

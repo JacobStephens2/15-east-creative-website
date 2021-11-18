@@ -12,6 +12,7 @@ const Home = (props) => {
   const expertResults = props.data.expertResults;
   const greatPartnerships = props.data.greatPartnerships;
   const features = props.data.features.edges;
+  const highlights = props.data.highlights.edges;
   const introImageClasses = `intro-image ${
     intro.frontmatter.intro_image_absolute && "intro-image-absolute"
   } 
@@ -59,6 +60,25 @@ const Home = (props) => {
           </div>
         </div>
       </div>
+
+      {highlights.length > 0 && (
+        <div className="strip">
+          <div className="container pt-6 pb-6 pt-md-10 pb-md-10">
+            <div className="row justify-content-center">
+              {highlights.map(({ node }) => (
+                <div
+                  key={node.id}
+                  className="col-12 col-md-6 col-lg-3 col-xl-3 mb-2"
+                >
+                  <div className="feature">
+                    <img src={node.src} alt={node.alt}></img>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
 
       {features.length > 0 && (
         <div className="strip">
@@ -145,6 +165,15 @@ export const query = graphql`
           id
           title
           description
+        }
+      }
+    }
+    highlights: allHighlightsJson {
+      edges {
+        node {
+          id
+          alt
+          src
         }
       }
     }
