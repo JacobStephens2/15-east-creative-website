@@ -7554,17 +7554,10 @@ ol li {
 }
 
 .feature {
-  height: 100%;
   border-radius: 3px;
   padding: 20px;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  background-size: cover;
-  display: flex;
-  align-items: flex-start;
+  color: white;
+  break-inside: avoid;
 }
 .feature .feature-image {
   flex: 0 0 auto;
@@ -7581,7 +7574,6 @@ ol li {
 }
 .feature .feature-content {
   margin-bottom: 0;
-  margin-top: auto;
 }
 
 .social {
@@ -7944,5 +7936,31 @@ span.status {
   }
   .portfolio-sample .portfolio-image-container {
     min-width: 100%;
+  }
+}
+
+.feature-section {
+  background-color: var(--primary);
+}
+
+.five-col-wide-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 568px) {
+  .five-col-wide-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 768px) {
+  .five-col-wide-row {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .five-col-wide-row {
+    display: block;
+    columns: 5;
   }
 }

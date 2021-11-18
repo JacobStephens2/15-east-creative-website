@@ -62,16 +62,13 @@ const Home = (props) => {
       </div>
 
       {highlights.length > 0 && (
-        <div className="strip">
+        <div className="strip samples-section">
           <div className="container pt-6 pb-6 pt-md-10 pb-md-10">
             <h1>but pretty isn't everything.</h1>
             <p>We get results, too.</p>
-            <div className="row justify-content-center">
+            <div className="five-col-wide-row">
               {highlights.map(({ node }) => (
-                <div
-                  key={node.id}
-                  className="col-12 col-md-6 col-lg-3 col-xl-3 mb-2"
-                >
+                <div key={node.id} className="mb-2">
                   <div className="feature">
                     <img src={node.src} alt={node.alt}></img>
                   </div>
@@ -84,22 +81,15 @@ const Home = (props) => {
       )}
 
       {features.length > 0 && (
-        <div className="strip">
+        <div className="strip feature-section">
           <div className="container pt-6 pb-6 pt-md-10 pb-md-10">
-            <div className="row justify-content-center">
+            <div className="five-col-wide-row">
               {features.map(({ node }) => (
-                <div
-                  key={node.id}
-                  className="col-12 col-md-6 col-lg-3 col-xl-3 mb-2"
-                >
-                  <div className="feature">
-                    <div className={node.class}></div>
-                    <h3 className="feature-title">{node.title}</h3>
-                    <div
-                      className="feature-content"
-                      dangerouslySetInnerHTML={{ __html: node.description }}
-                    ></div>
-                  </div>
+                <div className="feature" key={node.id}>
+                  <h3>{node.title}</h3>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: node.description }}
+                  ></div>
                 </div>
               ))}
             </div>
