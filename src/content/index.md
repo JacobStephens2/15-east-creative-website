@@ -1,11 +1,13 @@
 ---
-title: 'Home'
+title: "Home"
 intro_image: "/images/illustrations/AdobeStock_211464287_Preview-circle-logo.png"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
-header: "graphic design. | web design."
+header: "design for good people doing great work."
 ---
 
-## expert results and great partnerships
+## print&ensp;|&ensp;web&ensp;|&ensp;graphic
 
-We are a creative studio specializing in design, print, web, and project management. Melodee Stephens has over 40 years of experience collaborating with clients to create a variety of print products. Recently expanding to web design, we also create&nbsp;websites.
+You are good at what you do. Great, even. When you get to work inside your zone of creative genius, you come alive. What’s not in that zone though?&nbsp;Design.
+
+But that’s what we are here for! To take the ideas that live in your brain and make them into real designs that you can hold in your hands and see on the&nbsp;web.

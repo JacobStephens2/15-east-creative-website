@@ -1,22 +1,22 @@
 [
   {
     "title": "Expert",
-    "description": "We developed our talents into strengths by skills and&nbsp;knowledge.",
-    "class": "expert-class feature-image"
+    "description": "We’ve been at this a while and want nothing more than to share with you what we’ve learned about design along the&nbsp;way."
   },
   {
     "title": "Collaborative",
-    "description": "We work with you as much as feasible to&nbsp;create great&nbsp;products.",
-    "class": "collaborative-class feature-image"
+    "description": "You and us? We’re a team. We believe listening to you is the secret to unlocking our own creative&nbsp;magic."
+  },
+  {
+    "title": "Responsive",
+    "description": "Our communication style can only be described as fast and clear. We want you to feel supported at every step of this&nbsp;project."
   },
   {
     "title": "Detailed",
-    "description": "Our exacting attention to detail makes our product&nbsp;shine.",
-    "class": "detailed-class feature-image"
+    "description": "Our attention to detail borders on obsessive. (We are so you don’t have to&nbsp;be)."
   },
   {
     "title": "Imaginative",
-    "description": "We envision divergent approaches to realizing your&nbsp;vision.",
-    "class": "imaginative-class feature-image"
+    "description": "All you need  to bring us is an idea. We can help you imagine what it can&nbsp;be."
   }
 ]
