@@ -27,10 +27,9 @@ const KindWords = (props) => {
       {testimonials.nodes.map((node) => (
         <Carousel.Item key={node.id}>
           <div className="quote-box">
-            <div
-              className="carousel-quote"
-              dangerouslySetInnerHTML={{ __html: node.html }}
-            ></div>
+            <div className="carousel-quote">
+              <span dangerouslySetInnerHTML={{ __html: node.html }}></span>”
+            </div>
             <p className="carousel-quote-source">
               {node.frontmatter.name}&ensp;&ensp;|&ensp;&ensp;
               {node.frontmatter.role}

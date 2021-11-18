@@ -7668,16 +7668,25 @@ body {
 .visually-hidden {
   display: none;
 }
-
+.quote-box {
+  margin-top: 13%;
+}
 .carousel-quote:before {
-  border-left: 3px solid #b99b2d;
-  content: "";
+  content: "“";
   position: absolute;
   width: 100%;
   height: 60%;
-  top: 10%;
-  right: -34%;
+  top: 24%;
+  right: -19%;
   z-index: -5;
+  color: var(--primary);
+  font-weight: 700;
+  font-family: operetta-12;
+  font-size: 8rem;
+}
+
+.carousel-quote p {
+  display: inline;
 }
 @media (max-width: 991.98px) {
   .carousel-quote:before {
@@ -7707,10 +7716,18 @@ body {
     display: none;
   }
 }
-
+.carousel-quote-source {
+  margin-bottom: 4%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+p.carousel-quote-source {
+  margin-top: 0.8rem;
+}
 .carousel-quote,
 .carousel-quote-source {
-  margin: 0 15% 0 44%;
+  margin: 0 15% 0 28%;
 }
 @media (max-width: 991.98px) {
   .carousel-quote,
@@ -7719,12 +7736,6 @@ body {
   }
 }
 
-.carousel-quote-source {
-  margin-bottom: 4%;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
 @media (max-width: 991.98px) {
   .carousel-quote-source {
     margin-top: 0.3rem;
