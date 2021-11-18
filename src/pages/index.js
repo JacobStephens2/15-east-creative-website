@@ -64,6 +64,8 @@ const Home = (props) => {
       {highlights.length > 0 && (
         <div className="strip">
           <div className="container pt-6 pb-6 pt-md-10 pb-md-10">
+            <h1>but pretty isn't everything.</h1>
+            <p>We get results, too.</p>
             <div className="row justify-content-center">
               {highlights.map(({ node }) => (
                 <div
