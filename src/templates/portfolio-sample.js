@@ -9,11 +9,20 @@ const Service = ({ data }) => {
     <Layout bodyClass="page-services-single">
       <div className="container pb-6 pt-6 pt-md-10 pb-md-10 ">
         <div className="service service-single">
-          <h1 className="title">{data.markdownRemark.frontmatter.type}</h1>
+          <h1 className="title">
+            {data.markdownRemark.frontmatter.type}{" "}
+            <span className="title-comment">
+              {data.markdownRemark.frontmatter.titleComment}
+            </span>
+          </h1>
           <h2>
-            {data.markdownRemark.frontmatter.title}
+            {data.markdownRemark.frontmatter.title} |{" "}
+            {data.markdownRemark.frontmatter.author}
             {data.markdownRemark.frontmatter.pages > 0 &&
-              " | " + data.markdownRemark.frontmatter.pages + " pages"}
+              " | " +
+                data.markdownRemark.frontmatter.pages +
+                " pages " +
+                data.markdownRemark.frontmatter.pageComment}
           </h2>
           <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
           <div className="portfolio-sample">
@@ -81,6 +90,7 @@ export const query = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        titleComment
         mainImage
         image2
         image3
@@ -89,6 +99,8 @@ export const query = graphql`
         image6
         type
         pages
+        pageComment
+        author
       }
       fields {
         slug
