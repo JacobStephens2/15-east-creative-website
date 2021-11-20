@@ -1,12 +1,12 @@
 ---
 type: Print Collateral
 title: Delaware Valley Friends School
-mainImage: "/images/portfolio/CatalogPerfumeBottles/PerfumeCover.png"
-image2: "/images/portfolio/CatalogPerfumeBottles/PerfumeSpread1.png"
-image3: "/images/portfolio/CatalogPerfumeBottles/PerfumeSpread2.png"
-image4: "/images/portfolio/CatalogPerfumeBottles/PerfumeSpread3.png"
-image5: "/images/portfolio/CatalogPerfumeBottles/PerfumeSpread4.png"
-image6: "/images/portfolio/CatalogPerfumeBottles/PerfumeSpread5.png"
+mainImage: "/images/portfolio/"
+image2: "/images/portfolio/"
+image3: "/images/portfolio/"
+image4: "/images/portfolio/"
+image5: "/images/portfolio/"
+image6: "/images/portfolio/"
 featured: true
 pages: 76
 pageComment: including foldout, plus cover
