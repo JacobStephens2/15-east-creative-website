@@ -10,6 +10,6 @@ image4: "/images/portfolio/Tbow/TbowSpread3.png"
 date: 2018-11-18T12:33:46+10:00
 featured: true
 pages: 96
-pageComment: pages plus cover, included printed endleaves
+pageComment: plus cover, included printed endleaves
 weight: 5
 ---
