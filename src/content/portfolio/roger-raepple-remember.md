@@ -1,6 +1,6 @@
 ---
 title: Roger Raepple | Remember
-type: Book
+type: Photography Book
 mainImage: "/images/portfolio/BookRogerRaepple/RogerCover.png"
 image2: "/images/portfolio/BookRogerRaepple/RogerSpread1.png"
 image3: "/images/portfolio/BookRogerRaepple/RogerSpread2.png"
