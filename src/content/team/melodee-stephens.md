@@ -6,7 +6,7 @@ draft: false
 image: "/images/team/Mel_Brand_CC-005-mel-smile-portrait.jpg"
 jobtitle: "Experienced. Versatile. Detail oriented."
 promoted: true
-email: "melodee@15eastcreative.com"
+email: "melodee.stephens@me.com"
 weight: 1
 ---
 

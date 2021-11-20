@@ -69,8 +69,8 @@ const Footer = (props) => {
               <a href="tel:16107802023">
                 <p>610.780.2023</p>
               </a>
-              <a href="mailto:team@15eastcreative.com">
-                team@15eastcreative.com
+              <a href="mailto:melodee.stephens@me.com">
+                melodee.stephens@me.com
               </a>
             </Row>
           </Col>

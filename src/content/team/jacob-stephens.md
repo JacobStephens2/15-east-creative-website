@@ -6,7 +6,7 @@ draft: false
 image: "/images/team/Mel_Brand_CC-001-jacob-closeup-smile.jpg"
 jobtitle: "Learner. Strategic. Creative."
 promoted: true
-email: "jacob@15eastcreative.com"
+email: "jacob@stewardgoods.com"
 weight: 2
 ---
 
