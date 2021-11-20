@@ -10,6 +10,6 @@ image4: "/images/portfolio/PennColor/DispersionsSpreads3.png"
 featured: true
 pages: 8
 pageComment: diecut foldout
-weight: 5
+weight: 6
 date: 2018-11-18T12:33:46+10:00
 ---

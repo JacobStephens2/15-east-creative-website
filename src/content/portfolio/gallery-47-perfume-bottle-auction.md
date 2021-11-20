@@ -11,6 +11,6 @@ image6: "/images/portfolio/CatalogPerfumeBottles/PerfumeSpread5.png"
 featured: true
 pages: 76
 pageComment: including foldout, plus cover
-weight: 2
+weight: 8
 date: 2018-11-18T12:33:46+10:00
 ---

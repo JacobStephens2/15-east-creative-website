@@ -10,5 +10,5 @@ image6: "/images/portfolio/ChesterCountyLife/CCLSpread5.png"
 date: 2018-11-18T12:33:46+10:00
 featured: true
 pages: 132
-weight: 5
+weight: 4
 ---
