@@ -7629,7 +7629,6 @@ ol li {
 }
 
 .portfolio-main-image {
-  box-shadow: var(--box-shadow);
   max-height: 350px;
   margin-bottom: 0 !important;
 }
@@ -7920,9 +7919,6 @@ span.status {
   width: fit-content;
   margin-bottom: 2rem;
   padding: 2rem;
-}
-.portfolio-sample .portfolio-main-image {
-  box-shadow: var(--sample-box-shadow);
 }
 @media screen and (min-width: 992px) {
   .portfolio-sample {
