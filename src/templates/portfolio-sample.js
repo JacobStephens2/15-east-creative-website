@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 
 const Service = ({ data }) => {
   const { html } = data.markdownRemark;
+
   return (
     <Layout bodyClass="page-services-single">
       <div className="container pb-6 pt-6 pt-md-10 pb-md-10 ">
@@ -44,6 +45,30 @@ const Service = ({ data }) => {
                 src={data.markdownRemark.frontmatter.image4}
               />
             </div>
+
+            {data.markdownRemark.frontmatter.image5 ? (
+              <div className="portfolio-image-container">
+                <img
+                  alt={`Photo of ${data.markdownRemark.frontmatter.title}`}
+                  className="img-fluid mb-2 portfolio-main-image"
+                  src={data.markdownRemark.frontmatter.image5}
+                />
+              </div>
+            ) : (
+              <></>
+            )}
+
+            {data.markdownRemark.frontmatter.image6 ? (
+              <div className="portfolio-image-container">
+                <img
+                  alt={`Photo of ${data.markdownRemark.frontmatter.title}`}
+                  className="img-fluid mb-2 portfolio-main-image"
+                  src={data.markdownRemark.frontmatter.image6}
+                />
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       </div>
@@ -60,6 +85,8 @@ export const query = graphql`
         image2
         image3
         image4
+        image5
+        image6
         type
         pages
       }
