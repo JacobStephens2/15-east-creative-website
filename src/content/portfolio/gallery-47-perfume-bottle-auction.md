@@ -1,12 +1,16 @@
 ---
-title: Gallery 47  |  Perfume Bottle Auction
 type: Catalog
-date: 2018-11-18T12:33:46+10:00
-mainImage: "/images/portfolio/CatalogPerfumeBottles/Page_01.png"
-image2: "/images/portfolio/CatalogPerfumeBottles/Page_2-3spread.jpg"
-image3: "/images/portfolio/CatalogPerfumeBottles/Page_4-5spread.jpg"
-image4: "/images/portfolio/CatalogPerfumeBottles/Page_6-7spread.jpg"
+title: Perfume Bottle Auction
+author: Gallery 47
+mainImage: "/images/portfolio/CatalogPerfumeBottles/PerfumeCover.png"
+image2: "/images/portfolio/CatalogPerfumeBottles/PerfumeSpread1.png"
+image3: "/images/portfolio/CatalogPerfumeBottles/PerfumeSpread2.png"
+image4: "/images/portfolio/CatalogPerfumeBottles/PerfumeSpread3.png"
+image5: "/images/portfolio/CatalogPerfumeBottles/PerfumeSpread4.png"
+image6: "/images/portfolio/CatalogPerfumeBottles/PerfumeSpread5.png"
 featured: true
 pages: 76
+pageComment: including foldout, plus cover
 weight: 2
+date: 2018-11-18T12:33:46+10:00
 ---
