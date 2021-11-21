@@ -29,7 +29,7 @@ const Portfolio = (props) => {
       <div id="portfolio-samples" className="container pb-6">
         <div className="row">
           {services.map((edge) => (
-            <div key={edge.node.id} className="col-12 col-md-6 col-lg-4 mb-1">
+            <div key={edge.node.id} className="col-12 col-md-6 col-lg-6 mb-1">
               <div className="card service service-teaser">
                 <div className="card-content">
                   <div className="portfolio-image-container">
