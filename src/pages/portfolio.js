@@ -19,7 +19,7 @@ const Portfolio = (props) => {
       <div className="intro">
         <div className="container">
           <div className="row justify-content-start">
-            <div className="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+            <div className="col-12 col-lg-10 order-2 order-md-1">
               <div dangerouslySetInnerHTML={{ __html: intro.html }} />
             </div>
           </div>

@@ -7794,6 +7794,23 @@ p.carousel-quote-source {
   background-size: cover;
 }
 
+.expert-partnerships-background {
+  position: relative;
+}
+
+.expert-partnerships-background:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  background: url("/images/Mel_Brand_CC-012team.jpg");
+  background-size: cover;
+}
+
 .height {
   z-index: 5;
 }
@@ -7867,6 +7884,19 @@ li {
 .grey-bar {
   min-height: 4rem;
   background-color: var(--white-offset);
+}
+
+.gold-bar {
+  min-height: 4rem;
+  background-color: var(--dark-gold);
+}
+
+.gold-bar #client-list h2 {
+  color: white;
+}
+
+.gold-bar #client-list p {
+  color: white;
 }
 
 .section-container {
@@ -7971,4 +8001,25 @@ p {
   margin-bottom: 20px;
   line-height: 1.5;
   font-size: 1rem;
+}
+
+.page-services-single h1 {
+  font-family: brandon-grotesque, sans-serif, -apple-system;
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: var(--steel);
+}
+
+.page-services-single .title-comment {
+  text-transform: initial;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+.sample-details {
+  font-family: brandon-grotesque, sans-serif, -apple-system;
+  font-size: 1.1rem;
+  color: black;
 }
