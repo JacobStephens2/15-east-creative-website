@@ -7218,6 +7218,12 @@ ol li {
   flex: 1 0 auto;
   padding: 20px;
 }
+.call-box-top h3 {
+  font-size: 0.95rem;
+  color: var(--steel);
+  margin-bottom: 2rem;
+  margin-top: 4.6rem;
+}
 .call .call-box-bottom {
   flex: auto;
   padding: 20px;
@@ -7236,8 +7242,8 @@ ol li {
 .call .call-phone {
   margin-bottom: 5px;
 }
-.call strong {
-  font-weight: bold;
+.call-phone {
+  margin-bottom: 0.7rem;
 }
 .call svg {
   fill: #dbdbdb;
