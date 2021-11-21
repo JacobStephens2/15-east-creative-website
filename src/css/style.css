@@ -7909,10 +7909,6 @@ li {
   grid-template-columns: 1fr 1fr;
 }
 
-#portfolio-samples h2 {
-  font-size: 1.4rem;
-}
-
 span.status {
   text-transform: lowercase;
   padding-left: 0.7rem;
@@ -8009,6 +8005,7 @@ p {
   font-size: 1.1rem;
   text-transform: uppercase;
   color: var(--steel);
+  letter-spacing: 2px;
 }
 
 .page-services-single .title-comment {
@@ -8016,10 +8013,24 @@ p {
   font-style: italic;
   font-size: 0.9rem;
   color: var(--secondary);
+  letter-spacing: initial;
 }
 
 .sample-details {
   font-family: brandon-grotesque, sans-serif, -apple-system;
   font-size: 1.1rem;
   color: black;
+}
+
+#portfolio-samples h2 {
+  font-family: brandon-grotesque, sans-serif, -apple-system;
+  font-size: 1.15rem;
+  color: black;
+}
+
+.card-content h3 {
+  font-weight: 400;
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+  letter-spacing: 2px;
 }

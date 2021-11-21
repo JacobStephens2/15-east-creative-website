@@ -48,7 +48,14 @@ const Portfolio = (props) => {
                     </span>
                   </h3>
                   <Link to={edge.node.fields.slug}>
-                    <h2>{edge.node.frontmatter.title}</h2>
+                    <h2>
+                      {edge.node.frontmatter.author ? (
+                        edge.node.frontmatter.author + " | "
+                      ) : (
+                        <></>
+                      )}
+                      {edge.node.frontmatter.title}
+                    </h2>
                   </Link>
                 </div>
               </div>
@@ -75,6 +82,7 @@ export const query = graphql`
           frontmatter {
             title
             type
+            author
             status
             mainImage
           }
