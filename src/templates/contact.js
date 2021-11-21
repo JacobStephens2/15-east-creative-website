@@ -1,8 +1,8 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import SEO from '../components/SEO';
-import Layout from '../components/Layout';
-import Call from '../components/Call';
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import ContactForm from "../components/ContactForm";
+import Call from "../components/Call";
 
 const Contact = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter;
@@ -14,7 +14,11 @@ const Contact = ({ data }) => {
           <div className="col-12 col-md-8">
             <h1 className="title">{title}</h1>
             <Call showButton={false} />
-            <div className="content mt-4" dangerouslySetInnerHTML={{ __html: html }} />
+            <div
+              className="content mt-4"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+            <ContactForm />
           </div>
         </div>
       </div>
@@ -23,7 +27,7 @@ const Contact = ({ data }) => {
 };
 
 export const query = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
