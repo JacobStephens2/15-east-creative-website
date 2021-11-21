@@ -11,13 +11,19 @@ const Contact = ({ data }) => {
   const { html } = data.markdownRemark;
   return (
     <Layout bodyClass="page-default-single">
-      <div className="container pb-6 pt-6 pt-md-10 pb-md-10">
+      <div className="intro">
+        <div className="container">
+          <div className="row justify-content-start">
+            <div className="col-12 col-lg-10 order-2 order-md-1">
+              <h1 dangerouslySetInnerHTML={{ __html: title }} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container pb-6 pb-md-10">
         <div className="row justify-content-start">
           <div className="col-12 col-md-10">
-            <h1
-              className="title"
-              dangerouslySetInnerHTML={{ __html: title }}
-            ></h1>
             <Row>
               <Col lg={6}>
                 <div
