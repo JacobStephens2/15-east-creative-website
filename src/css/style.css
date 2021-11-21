@@ -6545,6 +6545,7 @@ progress {
   margin-bottom: 1rem;
   margin-left: 15%;
   list-style: none;
+  display: none;
 }
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
