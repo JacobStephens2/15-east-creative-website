@@ -3,15 +3,13 @@ name: "Jacob Stephens"
 title: "JACOB STEPHENS  |  WEB&nbsp;DESIGNER&nbsp;AND&nbsp;DEVELOPER"
 date: 2018-11-19T10:47:58+10:00
 draft: false
-image: "/images/team/Mel_Brand_CC-001-jacob-closeup-smile.jpg"
+image: "/images/team/Mel_Brand_CC-008Jacob.jpg"
 jobtitle: "Learner. Strategic. Creative."
 promoted: true
 email: "jacob@stewardgoods.com"
 weight: 2
 ---
 
-Joining the team in 2019, Jacob brought website development to 15 East and expanded 15 East's graphic design capacity to produce more and higher quality&nbsp;products.
+Part web developer, part project manager, wholly nerd. Jacob’s role at 15 East is technical: the man is all about data and detail. He takes beautiful design and makes it live and breathe on the web. He keeps large projects moving through our design&nbsp;process.
 
-Jacob has a great desire to learn and wants to continuously improve. This strength helps Jacob stay on the cutting edge of internet accessibility and technology. Further, faced with any given scenario, Jacob can quickly spot the relevant patterns and issues. This talent manifests in solutions to problems customers encounter with their websites. Jacob offers progressive ideas that solves problems, influencing how organizational systems develop. Jacob incarnated this habit in Jacob's introduction of task boards to 15 East to expand team communication and&nbsp;collaboration.
-
-The aforementioned strengths and work habits appear in Jacob's leisure, indicated by the delight Jacob takes in learning and playing new games. Jacob also created and manages an online space in which Jacob's community develops their understanding and view of life. Jacob lives married to and with Kendel Lyn Stephens in Lancaster,&nbsp;PA.
+Unsurprisingly, Jacob uses his technical mind in the off hours. He is fond of strategic board games and would be glad for you to join him in a game of Tigris & Euphrates. He lives in Lancaster, PA with his wife Kendel Lyn. Don’t be surprised if he comes to a meeting with three game&nbsp;options.

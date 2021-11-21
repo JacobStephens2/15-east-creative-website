@@ -5,6 +5,6 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
-# about us.
+# are you in the right place?
 
-We create graphic design and web&nbsp;app&nbsp;products.
+Let's see here... are you looking for someone to design a book for you and have no idea what steps to take? Are you a member of a team who eeds help building collateral material based on your brand?
