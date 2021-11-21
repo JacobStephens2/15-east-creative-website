@@ -10,19 +10,21 @@ const Service = ({ data }) => {
       <div className="container pb-6 pt-6 pt-md-10 pb-md-10 ">
         <div className="service service-single">
           <h1 className="title">
-            {data.markdownRemark.frontmatter.type}{" "}
+            {data.markdownRemark.frontmatter.type}
             <span className="title-comment">
+              &ensp;
               {data.markdownRemark.frontmatter.titleComment}
             </span>
           </h1>
-          <h2>
-            {data.markdownRemark.frontmatter.title} |{" "}
-            {data.markdownRemark.frontmatter.author}
-            {data.markdownRemark.frontmatter.pages > 0 &&
-              " | " +
-                data.markdownRemark.frontmatter.pages +
-                " pages " +
-                data.markdownRemark.frontmatter.pageComment}
+          <h2 className="sample-details">
+            <i>{data.markdownRemark.frontmatter.title}</i> |{" "}
+            {data.markdownRemark.frontmatter.author} |{" "}
+            {data.markdownRemark.frontmatter.pages} pages{" "}
+            {data.markdownRemark.frontmatter.pageComment ? (
+              data.markdownRemark.frontmatter.pageComment
+            ) : (
+              <></>
+            )}
           </h2>
           <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
           <div className="portfolio-sample">
