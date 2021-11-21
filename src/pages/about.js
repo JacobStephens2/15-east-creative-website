@@ -109,7 +109,7 @@ const About = (props) => {
 
       <div className="gold-bar">
         <Container id="client-list" className="section-container">
-          <h2>select client list</h2>
+          <h1>select client list</h1>
           <p>
             &nbsp;The&nbsp;Agnes&nbsp;Irwin&nbsp;&nbsp;School&ensp;&ensp;|&ensp;&ensp;Archmere&nbsp;&nbsp;Academy&ensp;&ensp;|&ensp;&ensp;Biomass&nbsp;&nbsp;Controls&ensp;&ensp;|&ensp;&ensp;Brandywine&nbsp;Oak&nbsp;&nbsp;Wealth&ensp;&ensp;|&ensp;&ensp;Brilliant&nbsp;&nbsp;Graphics&ensp;&ensp;|&ensp;&ensp;
             <i>Chester&nbsp;County&nbsp;&nbsp;Life</i>
