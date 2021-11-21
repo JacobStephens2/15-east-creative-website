@@ -17,9 +17,17 @@ const Service = ({ data }) => {
             </span>
           </h1>
           <h2 className="sample-details">
-            <i>{data.markdownRemark.frontmatter.title}</i> |{" "}
-            {data.markdownRemark.frontmatter.author} |{" "}
-            {data.markdownRemark.frontmatter.pages} pages{" "}
+            <i>{data.markdownRemark.frontmatter.title}</i>
+            {data.markdownRemark.frontmatter.author ? (
+              " | " + data.markdownRemark.frontmatter.author
+            ) : (
+              <></>
+            )}
+            {data.markdownRemark.frontmatter.pages ? (
+              " | " + data.markdownRemark.frontmatter.pages + " pages "
+            ) : (
+              <></>
+            )}
             {data.markdownRemark.frontmatter.pageComment ? (
               data.markdownRemark.frontmatter.pageComment
             ) : (
