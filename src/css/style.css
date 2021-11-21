@@ -7626,7 +7626,12 @@ ol li {
 }
 .team-summary .team-meta p {
   color: #000000;
-  font-weight: 500;
+  font-weight: 300;
+  margin-bottom: 18px;
+}
+
+.team-summary .team-meta p:last-of-type {
+  margin-bottom: 26px;
 }
 .team-summary .team-content {
   margin-top: 20px;
@@ -8065,4 +8070,19 @@ p {
 .contact-container {
   padding-left: 0;
   padding-right: 0;
+}
+
+.team-meta h2.team-name {
+  font-family: brandon-grotesque, sans-serif, -apple-system;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: var(--steel);
+}
+
+.team-meta p.team-description {
+  font-family: operetta-12, serif, -apple-system;
+  color: var(--secondary);
+  margin-top: 1.2rem;
+  font-size: 1.4rem;
 }

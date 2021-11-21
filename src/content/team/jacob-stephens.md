@@ -1,5 +1,6 @@
 ---
 name: "Jacob Stephens"
+firstName: "Jacob"
 title: "JACOB STEPHENS  |  WEB&nbsp;DESIGNER&nbsp;AND&nbsp;DEVELOPER"
 date: 2018-11-19T10:47:58+10:00
 draft: false

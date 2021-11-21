@@ -57,7 +57,7 @@ const About = (props) => {
                   className="team-content"
                 ></div>
                 <ButtonExternal
-                  buttonText={`Email ${node.frontmatter.name}`}
+                  buttonText={`Email ${node.frontmatter.firstName}`}
                   target={`mailto:${node.frontmatter.email}`}
                 ></ButtonExternal>
               </Col>
@@ -143,6 +143,7 @@ export const query = graphql`
             image
             jobtitle
             name
+            firstName
             email
           }
         }
