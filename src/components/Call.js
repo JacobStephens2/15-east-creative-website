@@ -13,7 +13,7 @@ const Call = (props) => {
   `);
   const phoneLink = "tel:" + data.contactJson.phone;
   return (
-    <div className="call">
+    <div>
       <div className="call-box-top">
         {data.contactJson.phone && (
           <div className="call-phone">

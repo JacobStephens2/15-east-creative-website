@@ -6248,6 +6248,32 @@ textarea {
   line-height: inherit;
 }
 
+input,
+textarea {
+  width: 100%;
+  background-color: var(--background-grey);
+  border: 1px solid var(--secondary);
+}
+
+input[type="checkbox"] {
+  width: 3%;
+  margin-right: 0.5rem;
+}
+
+label {
+  width: 95%;
+  margin-top: 1.5rem;
+  margin-bottom: 0.1rem;
+}
+
+.checkbox-section {
+  margin-top: 1.5rem;
+}
+
+.checkbox-section label {
+  margin-top: 1rem;
+}
+
 button,
 select {
   text-transform: none;
@@ -8033,4 +8059,9 @@ p {
   font-size: 0.95rem;
   margin-bottom: 2px;
   letter-spacing: 2px;
+}
+
+.contact-container {
+  padding-left: 0;
+  padding-right: 0;
 }

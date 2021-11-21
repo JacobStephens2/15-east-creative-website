@@ -1,32 +1,40 @@
 import * as React from "react";
 import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 const ContactForm = () => {
   return (
     <Container className="contact-container">
       <a id="contact-form" className="anchor"></a>
       <form action="/api/sendgrid" method="POST">
-        {/* First Name */}
-        <div className="form-field">
-          <label
-            style={{ display: `block`, marginBottom: `4px` }}
-            htmlFor="name"
-          >
-            First Name
-          </label>
-          <input name="name" id="name" type="text" />
-        </div>
+        <Row>
+          {/* First Name */}
+          <Col md={6}>
+            <div className="form-field">
+              <label
+                style={{ display: `block`, marginBottom: `4px` }}
+                htmlFor="name"
+              >
+                First Name
+              </label>
+              <input name="name" id="name" type="text" />
+            </div>
+          </Col>
 
-        {/* Last Name */}
-        <div className="form-field">
-          <label
-            style={{ display: `block`, marginBottom: `4px` }}
-            htmlFor="last_name"
-          >
-            Last Name
-          </label>
-          <input name="last_name" id="last_name" type="text" />
-        </div>
+          {/* Last Name */}
+          <Col md={6}>
+            <div className="form-field">
+              <label
+                style={{ display: `block`, marginBottom: `4px` }}
+                htmlFor="last_name"
+              >
+                Last Name
+              </label>
+              <input name="last_name" id="last_name" type="text" />
+            </div>
+          </Col>
+        </Row>
 
         {/* Email */}
         <div className="form-field">
@@ -62,7 +70,7 @@ const ContactForm = () => {
         </div>
 
         {/* Assistance desired checkboxes */}
-        <div className="form-field">
+        <div className="checkbox-section form-field">
           <label
             style={{ display: `block`, marginBottom: `4px` }}
             htmlFor="location"
@@ -125,7 +133,7 @@ const ContactForm = () => {
             name="message"
             id="message"
             type="text"
-            rows="10"
+            rows="7"
             cols="30"
           />
         </div>
@@ -138,11 +146,11 @@ const ContactForm = () => {
           >
             How did you hear about 15 East?
           </label>
-          <textarea name="source" id="source" type="text" rows="10" cols="30" />
+          <textarea name="source" id="source" type="text" rows="7" cols="30" />
         </div>
 
         <div>
-          <button>SEND MESSAGE</button>
+          <button>SEND FORM</button>
         </div>
       </form>
     </Container>
