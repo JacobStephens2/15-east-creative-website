@@ -9,7 +9,7 @@ target: "/about"
 
 # you...
 
-...have a lot going on. All good things, of course. You have much to accomplish and not enough time or energy to do it all. You know exactly what your organization needs, but have no idea where to find it. You need someone to take this whole design project off your plate.
+...have a lot going on. All good things, of course. You have much to accomplish and not enough time or energy to do it all. You know exactly what your organization needs, but have no idea where to find it. You need someone to take this whole design project off your&nbsp;plate.
 
 # we...
 
