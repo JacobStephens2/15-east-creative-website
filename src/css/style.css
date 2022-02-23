@@ -7948,7 +7948,7 @@ li {
 }
 
 span.status {
-  text-transform: lowercase;
+  text-transform: initial;
   padding-left: 0.7rem;
   font-size: 1.1rem;
   color: var(--steel);
