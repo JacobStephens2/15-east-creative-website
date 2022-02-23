@@ -4,7 +4,7 @@ firstName: "Jacob"
 title: "JACOB STEPHENS  |  WEB&nbsp;DESIGNER&nbsp;AND&nbsp;DEVELOPER"
 date: 2018-11-19T10:47:58+10:00
 draft: false
-image: "/images/team/Mel_Brand_CC-008Jacob.jpg"
+image: "/images/team/Mel_Brand040-jacob-square.jpg"
 jobtitle: "Learner. Strategic. Creative."
 promoted: true
 email: "jacob@stewardgoods.com"

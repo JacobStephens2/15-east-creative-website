@@ -4,7 +4,7 @@ firstName: "Melodee"
 title: "MELODEE DILL STEPHENS | DESIGNER"
 date: 2018-11-19T10:47:58+10:00
 draft: false
-image: "/images/team/Mel_Brand_CC-009Melodee.jpg"
+image: "/images/team/Mel_Brand046-mel-square.jpg"
 jobtitle: "Experienced. Versatile. Detail oriented."
 promoted: true
 email: "melodee.stephens@me.com"
