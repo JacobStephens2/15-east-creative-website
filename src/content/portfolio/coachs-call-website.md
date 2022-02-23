@@ -1,7 +1,7 @@
 ---
 title: Coach's Call
 type: Website
-status: coming soon
+status: " "
 mainImage: "/images/portfolio/CoachsCall/gatsbyjs-io_golden-crop.png"
 image2: "/images/portfolio/CoachsCall/coachscall.gatsbyjs.io_about.png"
 image3: "/images/portfolio/CoachsCall/homepage-mobile.png"
