@@ -4,6 +4,10 @@ import Layout from "../components/Layout";
 
 const Service = ({ data }) => {
   const { html } = data.markdownRemark;
+  var pages = data.markdownRemark.frontmatter.pages + " pages ";
+  var author = data.markdownRemark.frontmatter.author;
+  var title = data.markdownRemark.frontmatter.title;
+  var spacer = "&emsp;|&emsp;";
 
   return (
     <Layout bodyClass="page-services-single">
@@ -16,18 +20,40 @@ const Service = ({ data }) => {
               {data.markdownRemark.frontmatter.titleComment}
             </span>
           </h1>
-          <h2 className="sample-details">
-            <i>{data.markdownRemark.frontmatter.title}</i>
-            {data.markdownRemark.frontmatter.author ? (
-              " | " + data.markdownRemark.frontmatter.author
-            ) : (
-              <></>
-            )}
-            {data.markdownRemark.frontmatter.pages ? (
-              " | " + data.markdownRemark.frontmatter.pages + " pages "
-            ) : (
-              <></>
-            )}
+
+          {data.markdownRemark.frontmatter.author != null && (
+            <>
+              <h2
+                className="sample-details inline"
+                dangerouslySetInnerHTML={{
+                  __html: author,
+                }}
+              ></h2>
+              <span dangerouslySetInnerHTML={{ __html: spacer }}></span>
+            </>
+          )}
+
+          {data.markdownRemark.frontmatter.title != null && (
+            <h2
+              className="sample-details inline"
+              dangerouslySetInnerHTML={{
+                __html: title,
+              }}
+            ></h2>
+          )}
+
+          {data.markdownRemark.frontmatter.pages != null && (
+            <>
+              <span dangerouslySetInnerHTML={{ __html: spacer }}></span>
+              <h2
+                className="sample-details inline"
+                dangerouslySetInnerHTML={{
+                  __html: pages,
+                }}
+              ></h2>
+            </>
+          )}
+          <h2 className="sample-details inline">
             {data.markdownRemark.frontmatter.pageComment ? (
               data.markdownRemark.frontmatter.pageComment
             ) : (
