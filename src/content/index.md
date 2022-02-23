@@ -1,6 +1,6 @@
 ---
 title: "Home"
-intro_image: "/images/mel-and-jacob-at-desk-circle.png"
+intro_image: "/images/mel-and-jacob-desk-circle.png"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 header: "design for good people doing great work."
