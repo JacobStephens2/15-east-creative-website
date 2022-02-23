@@ -2,7 +2,7 @@
 type: Photography Book
 title: Seeing the Sourlands
 author: Sourlands Conservancy
-titleComment: in partnership with Brilliant Graphics
+status: in partnership with Brilliant Graphics
 mainImage: "/images/portfolio/Sourlands/SourlandsCover.png"
 image2: "/images/portfolio/Sourlands/SourlandsSpread1.png"
 image3: "/images/portfolio/Sourlands/SourlandsSpread2.png"

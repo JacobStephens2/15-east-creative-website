@@ -1,6 +1,7 @@
 ---
 type: Art Book
 title: Jones Art Studio
+status: in partnership with Brilliant Graphics
 mainImage: "/images/portfolio/JonesArt/JonesArtCover.png"
 image2: "/images/portfolio/JonesArt/JonesSpread1.png"
 image3: "/images/portfolio/JonesArt/JonesSpread2.png"

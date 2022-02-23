@@ -1,7 +1,7 @@
 ---
 title: Remember
 author: Roger Raepple
-titleComment: in partnership with Brilliant Graphics
+status: in partnership with Brilliant Graphics
 type: Photography Book
 mainImage: "/images/portfolio/BookRogerRaepple/RogerCover.png"
 image2: "/images/portfolio/BookRogerRaepple/RogerSpread1.png"

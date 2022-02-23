@@ -1,6 +1,6 @@
 ---
 title: Love Street
-titleComment: in partnership with Brilliant Graphics
+status: in partnership with Brilliant Graphics
 author: Tbow
 type: Photography Book
 mainImage: "/images/portfolio/Tbow/TBowCover.png"

@@ -1,7 +1,7 @@
 ---
 type: Brochure
 title: Color Dispersions Brochure
-titleComment: in partnership with Brilliant Graphics
+status: in partnership with Brilliant Graphics
 author: Penn Color
 mainImage: "/images/portfolio/PennColor/DispersionsCover.png"
 image2: "/images/portfolio/PennColor/DispersionsSpreads1.png"

@@ -100,7 +100,7 @@ export const query = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        titleComment
+        status
         mainImage
         image2
         image3
