@@ -8017,8 +8017,7 @@ span.status {
 }
 @media screen and (min-width: 992px) {
   .five-col-wide-row {
-    display: block;
-    columns: 5;
+    display: flex;
   }
 }
 img.homepage-sample {
