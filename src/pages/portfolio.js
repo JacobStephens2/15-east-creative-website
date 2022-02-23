@@ -11,6 +11,7 @@ const Portfolio = (props) => {
   } ${
     intro.frontmatter.intro_image_hide_on_mobile && "intro-image-hide-mobile"
   }`;
+  const spacer = "&emsp;|&emsp;";
 
   return (
     <Layout bodyClass="page-services">
@@ -48,14 +49,17 @@ const Portfolio = (props) => {
                     </span>
                   </h3>
                   <Link to={edge.node.fields.slug}>
-                    <h2>
-                      {edge.node.frontmatter.author ? (
-                        edge.node.frontmatter.author + " | "
-                      ) : (
-                        <></>
-                      )}
-                      {edge.node.frontmatter.title}
-                    </h2>
+                    {edge.node.frontmatter.author != null && (
+                      <>
+                        <h2 className="inline">
+                          {edge.node.frontmatter.author}
+                        </h2>
+                        <span
+                          dangerouslySetInnerHTML={{ __html: spacer }}
+                        ></span>
+                      </>
+                    )}
+                    <h2 className="inline">{edge.node.frontmatter.title}</h2>
                   </Link>
                 </div>
               </div>
