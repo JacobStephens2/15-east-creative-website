@@ -60,7 +60,10 @@ const Service = ({ data }) => {
               <></>
             )}
           </h2>
-          <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
+          <div
+            className="content margin-top"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
           <div className="portfolio-sample">
             <div className="portfolio-image-container">
               <img
