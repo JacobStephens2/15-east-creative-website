@@ -2,3 +2,6 @@ src/scss/bootstrap/* linguist-vendored
 src/scss/components/* linguist-vendored
 src/scss/libraries/hamburgers/* linguist-vendored
 src/scss/pages/* linguist-vendored
+src/css/bootstrap/* linguist-vendored
+src/css/libraries/hamburgers/* linguist-vendored
+src/css/style.css.map linguist-vendored
