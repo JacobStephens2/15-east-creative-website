@@ -1,1 +1,4 @@
 src/scss/bootstrap/* linguist-vendored
+src/scss/components/* linguist-vendored
+src/scss/libraries/hamburgers/* linguist-vendored
+src/scss/pages/* linguist-vendored
