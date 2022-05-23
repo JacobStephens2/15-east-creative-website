@@ -77,7 +77,7 @@ ${req.body.message}`;
     }
 
     if (checkIfSpam(messagehtml)) {
-      // if there is a match, aka exec() returns true,
+      // if there is a match,
       // do not send an email
     } else {
       // send an email
