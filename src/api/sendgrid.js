@@ -57,19 +57,44 @@ ${req.body.message}`;
       message.html = contentHTML;
     }
 
-    return sendgrid.send(message).then(
-      () => {
-        res.status(200).redirect("/message-sent");
-      },
-      (error) => {
-        console.error(error);
-        if (error.response) {
-          return res.status(500).json({
-            error: error.response,
-          });
-        }
+    function checkIfSpam(text) {
+      const one = new RegExp('Buy Here');
+      const two = new RegExp('https://');
+      if (one.test(text)) {
+        // if a match is found, return true,
+        // preventing an email from getting sent
+        return true;
+
+      } else if (two.test(text)) {
+
+        return true;
+
+      } else {
+        // return false if no matches are found,
+        // resulting in an email getting sent
+        return false;
       }
-    );
+    }
+
+    if (checkIfSpam(messagehtml)) {
+      // if there is a match, aka exec() returns true,
+      // do not send an email
+    } else {
+      // send an email
+      return sendgrid.send(message).then(
+        () => {
+          res.status(200).redirect("/message-sent");
+        },
+        (error) => {
+          console.error(error);
+          if (error.response) {
+            return res.status(500).json({
+              error: error.response,
+            });
+          }
+        }
+      );
+    }
   } catch (err) {
     console.log(err);
     return res.status(500).json({ message: "There was an error", error: err });
