@@ -1,0 +1,17 @@
+{
+    "name": "jacob/15east.stewardgoods.com",
+    "autoload": {
+        "psr-4": {
+            "Jacob\\15EastStewardgoodsCom\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jacob Stephens",
+            "email": "jacob@stewardgoods.com"
+        }
+    ],
+    "require": {
+        "sendgrid/sendgrid": "^8.0"
+    }
+}

@@ -1,5 +1,0 @@
----
-name: "Lisa Howell"
-role: "Director of Marketing & Communications, Delaware Valley Friends School"
----
-Melodee Stephens is my go-to designer on projects ranging from annual print ad development to annual report design to application of a new brand identity across multiple platforms and pieces.  What sets Melodee apart, and has kept me coming back to her year after year, is the fact that in all she does she is not just a great graphic designer but also a valued strategic partner. Melodee’s designs are clean, consistent, and beautiful, but more than that she brings a practical sensibility from vision to implementation that thoughtfully marries the aesthetic appeal of a piece with its objective. Melodee’s experience and expertise in production make her a valued resource in selecting the right print partners for each job, and managing them through to successful completion. Her accuracy, eye for detail and consistency in applying brand standards and elements make her an ideal partner in both building and maintaining brand&nbsp;collateral.
