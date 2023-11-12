@@ -8680,68 +8680,6 @@
                   </div>
                   <div class="col-lg-6">
                     <div class="contact-container container"><a id="contact-form" class="anchor"></a>
-                      <form action="https://<?php echo DOMAIN; ?>/email/send_email" method="POST">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-field"><label for="name" style="display: block; margin-bottom: 4px;">First
-                                Name</label><input name="name" id="name" type="text">
-                              <div data-lastpass-icon-root="true"
-                                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
-                                <template shadowrootmode="open"><svg width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg" data-lastpass-icon="true"
-                                    style="position: absolute; cursor: pointer; height: 20.7969px; max-height: 20.7969px; width: 22px; max-width: 22px; top: 2px; left: 178.5px; z-index: auto; color: rgb(215, 64, 58);">
-                                    <rect x="0.680176" y="0.763062" width="22.6392" height="22.4737" rx="4"
-                                      fill="currentColor"></rect>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                      d="M19.7935 7.9516C19.7935 7.64414 20.0427 7.3949 20.3502 7.3949C20.6576 7.3949 20.9069 7.64414 20.9069 7.9516V16.0487C20.9069 16.3562 20.6576 16.6054 20.3502 16.6054C20.0427 16.6054 19.7935 16.3562 19.7935 16.0487V7.9516Z"
-                                      fill="white"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                      d="M4.76288 13.6577C5.68525 13.6577 6.43298 12.9154 6.43298 11.9998C6.43298 11.0842 5.68525 10.3419 4.76288 10.3419C3.8405 10.3419 3.09277 11.0842 3.09277 11.9998C3.09277 12.9154 3.8405 13.6577 4.76288 13.6577Z"
-                                      fill="white"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                      d="M10.3298 13.6577C11.2521 13.6577 11.9999 12.9154 11.9999 11.9998C11.9999 11.0842 11.2521 10.3419 10.3298 10.3419C9.4074 10.3419 8.65967 11.0842 8.65967 11.9998C8.65967 12.9154 9.4074 13.6577 10.3298 13.6577Z"
-                                      fill="white"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                      d="M15.8964 13.6577C16.8188 13.6577 17.5665 12.9154 17.5665 11.9998C17.5665 11.0842 16.8188 10.3419 15.8964 10.3419C14.974 10.3419 14.2263 11.0842 14.2263 11.9998C14.2263 12.9154 14.974 13.6577 15.8964 13.6577Z"
-                                      fill="white"></path>
-                                  </svg></template></div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-field"><label for="last_name"
-                                style="display: block; margin-bottom: 4px;">Last Name</label><input name="last_name"
-                                id="last_name" type="text"></div>
-                          </div>
-                        </div>
-                        <div class="form-field"><label for="email" style="display: block; margin-bottom: 4px;">Email
-                            Address</label><input name="email" id="email" type="email" required=""></div>
-                        <div class="form-field"><label for="business_name"
-                            style="display: block; margin-bottom: 4px;">Your Business Name</label><input
-                            name="business_name" id="business_name" type="text"></div>
-                        <div class="form-field"><label for="location" style="display: block; margin-bottom: 4px;">Your
-                            Location</label><input name="location" id="location" type="text"></div>
-                        <div class="checkbox-section form-field"><label for="location"
-                            style="display: block; margin-bottom: 4px;">Check all that you are looking for assistance
-                            with</label><input name="checkbox_photography" id="checkbox_photography" type="checkbox"
-                            value="Photography / Art Book"><label for="checkbox_photography">Photography / Art
-                            Book</label><input name="checkbox_catalog" id="checkbox_catalog" type="checkbox"
-                            value="Catalog"><label for="checkbox_catalog">Catalog</label><input name="checkbox_magazine"
-                            id="checkbox_magazine" type="checkbox" value="Magazine"><label
-                            for="checkbox_magazine">Magazine</label><input name="checkbox_printcollateral"
-                            id="checkbox_printcollateral" type="checkbox" value="Print Collateral"><label
-                            for="checkbox_printcollateral">Print Collateral</label><input name="checkbox_web"
-                            id="checkbox_web" type="checkbox" value="Website Design/Development"><label
-                            for="checkbox_web">Website Design/Development</label><input name="checkbox_other"
-                            id="checkbox_other" type="checkbox" value="Other"><label for="checkbox_other">Other</label>
-                        </div>
-                        <div style="margin-bottom: 24px;"><label for="message"
-                            style="display: block; margin-bottom: 4px;">Tell me about your project.</label><textarea
-                            name="message" id="message" type="text" rows="7" cols="30"></textarea></div>
-                        <div style="margin-bottom: 24px;"><label for="source"
-                            style="display: block; margin-bottom: 4px;">How did you hear about 15 East?</label><textarea
-                            name="source" id="source" type="text" rows="7" cols="30"></textarea></div>
-                        <div><button>SEND FORM</button></div>
-                      </form>
                     </div>
                   </div>
                 </div>
