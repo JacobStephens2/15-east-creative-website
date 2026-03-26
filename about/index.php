@@ -8526,8 +8526,9 @@
                     and would be glad for you to join him in a game of Tigris &amp; Euphrates. He lives in Lancaster, PA.
                     Don’t be surprised if he comes to a meeting with three game&nbsp;options.
                   </p>
-                </div><a href="mailto:jacob@stewardgoods.com"><button class="button-component" name="Email Jacob">Email
+                </div><a href="mailto:jacob@stephens.page"><button class="button-component" name="Email Jacob">Email
                     Jacob<div id="triangle-right"></div></button></a>
+                <a href="https://stephens.page/portfolio.html"><button class="button-component" name="Jacob's Portfolio">Portfolio<div id="triangle-right"></div></button></a>
               </div>
             </div>
           </div>
