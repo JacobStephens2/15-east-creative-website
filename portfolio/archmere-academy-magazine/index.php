@@ -8611,22 +8611,22 @@
               <div class="content margin-top"></div>
               <div class="portfolio-sample">
                 <div class="portfolio-image-container"><img alt="Photo of The Archmerean"
-                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - archmere_files/ArchmereCover.png">
+                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - archmere_files/ArchmereCover.webp">
                 </div>
                 <div class="portfolio-image-container"><img alt="Photo of The Archmerean"
-                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - archmere_files/ArchmereSpread1.png">
+                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - archmere_files/ArchmereSpread1.webp">
                 </div>
                 <div class="portfolio-image-container"><img alt="Photo of The Archmerean"
-                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - archmere_files/ArchmereSpread2.png">
+                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - archmere_files/ArchmereSpread2.webp">
                 </div>
                 <div class="portfolio-image-container"><img alt="Photo of The Archmerean"
-                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - archmere_files/ArchmereSpread3.png">
+                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - archmere_files/ArchmereSpread3.webp">
                 </div>
                 <div class="portfolio-image-container"><img alt="Photo of The Archmerean"
-                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - archmere_files/ArchmereSpread4.png">
+                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - archmere_files/ArchmereSpread4.webp">
                 </div>
                 <div class="portfolio-image-container"><img alt="Photo of The Archmerean"
-                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - archmere_files/ArchmereSpread5.png">
+                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - archmere_files/ArchmereSpread5.webp">
                 </div>
               </div>
             </div>
@@ -8699,6 +8699,12 @@
   <script src="./15 East - archmere_files/app-3c9a821799db070428a3.js" async=""></script>
   <script src="./15 East - archmere_files/framework-626f952c4a8c68f4bf53.js" async=""></script>
   <script src="./15 East - archmere_files/webpack-runtime-a3031d37eff3e66bd590.js" async=""></script>
+  <script>
+    document.getElementById('toggle-main-menu-mobile').addEventListener('click', function () {
+      this.classList.toggle('is-active');
+      document.getElementById('main-menu-mobile').classList.toggle('open');
+    });
+  </script>
 </body>
 
 </html>

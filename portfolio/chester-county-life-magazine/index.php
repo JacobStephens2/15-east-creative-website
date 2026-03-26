@@ -8647,17 +8647,17 @@
               <div class="content margin-top"></div>
               <div class="portfolio-sample">
                 <div class="portfolio-image-container"><img alt="Photo of Chester County Life"
-                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - ccl_files/CCLCover.png"></div>
+                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - ccl_files/CCLCover.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of Chester County Life"
-                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - ccl_files/CCLSpread1.png"></div>
+                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - ccl_files/CCLSpread1.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of Chester County Life"
-                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - ccl_files/CCLSpread2.png"></div>
+                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - ccl_files/CCLSpread2.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of Chester County Life"
-                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - ccl_files/CCLSpread3.png"></div>
+                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - ccl_files/CCLSpread3.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of Chester County Life"
-                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - ccl_files/CCLSpread4.png"></div>
+                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - ccl_files/CCLSpread4.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of Chester County Life"
-                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - ccl_files/CCLSpread5.png"></div>
+                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - ccl_files/CCLSpread5.webp"></div>
               </div>
             </div>
           </div>
@@ -8729,6 +8729,12 @@
   <script src="./15 East - ccl_files/app-3c9a821799db070428a3.js" async=""></script>
   <script src="./15 East - ccl_files/framework-626f952c4a8c68f4bf53.js" async=""></script>
   <script src="./15 East - ccl_files/webpack-runtime-a3031d37eff3e66bd590.js" async=""></script>
+  <script>
+    document.getElementById('toggle-main-menu-mobile').addEventListener('click', function () {
+      this.classList.toggle('is-active');
+      document.getElementById('main-menu-mobile').classList.toggle('open');
+    });
+  </script>
 </body>
 
 </html>

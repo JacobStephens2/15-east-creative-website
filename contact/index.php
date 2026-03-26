@@ -8768,6 +8768,12 @@
         </div>
       </template></div>
   </div>
+  <script>
+    document.getElementById('toggle-main-menu-mobile').addEventListener('click', function () {
+      this.classList.toggle('is-active');
+      document.getElementById('main-menu-mobile').classList.toggle('open');
+    });
+  </script>
 </body>
 
 </html>

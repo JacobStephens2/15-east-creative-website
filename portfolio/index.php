@@ -8487,7 +8487,7 @@
                   <div class="card-content">
                     <div class="portfolio-image-container"><a
                         href="https://<?php echo DOMAIN; ?>/portfolio/roger-raepple-remember/"><img alt="Photo of Remember"
-                          class="img-fluid mb-2 portfolio-main-image" src="./portfolio_files/RogerCover.png"></a></div>
+                          class="img-fluid mb-2 portfolio-main-image" src="./portfolio_files/RogerCover.webp"></a></div>
                     <h3>Photography Book<span class="status">in partnership with Brilliant Graphics</span></h3><a
                       href="https://<?php echo DOMAIN; ?>/portfolio/roger-raepple-remember/">
                       <h2 class="inline">Roger Raepple</h2><span> | </span>
@@ -8502,7 +8502,7 @@
                     <div class="portfolio-image-container"><a
                         href="https://<?php echo DOMAIN; ?>/portfolio/agnes-irwin-print-collateral/"><img
                           alt="Photo of The Agnes Irwin School" class="img-fluid mb-2 portfolio-main-image"
-                          src="./portfolio_files/DivisionBrochure_20-21_Page_01.png"></a></div>
+                          src="./portfolio_files/DivisionBrochure_20-21_Page_01.webp"></a></div>
                     <h3>Print Collateral<span class="status"></span></h3><a
                       href="https://<?php echo DOMAIN; ?>/portfolio/agnes-irwin-print-collateral/">
                       <h2 class="inline">The Agnes Irwin School</h2>
@@ -8516,7 +8516,7 @@
                     <div class="portfolio-image-container"><a
                         href="https://<?php echo DOMAIN; ?>/portfolio/archmere-academy-magazine/"><img
                           alt="Photo of The Archmerean" class="img-fluid mb-2 portfolio-main-image"
-                          src="./portfolio_files/ArchmereCover.png"></a></div>
+                          src="./portfolio_files/ArchmereCover.webp"></a></div>
                     <h3>Magazine<span class="status"></span></h3><a
                       href="https://<?php echo DOMAIN; ?>/portfolio/archmere-academy-magazine/">
                       <h2 class="inline">Archmere Academy</h2><span> | </span>
@@ -8531,7 +8531,7 @@
                     <div class="portfolio-image-container"><a
                         href="https://<?php echo DOMAIN; ?>/portfolio/chester-county-life-magazine/"><img
                           alt="Photo of Chester County Life" class="img-fluid mb-2 portfolio-main-image"
-                          src="./portfolio_files/CCLCover.png"></a></div>
+                          src="./portfolio_files/CCLCover.webp"></a></div>
                     <h3>Magazine<span class="status"></span></h3><a
                       href="https://<?php echo DOMAIN; ?>/portfolio/chester-county-life-magazine/">
                       <h2 class="inline">Chester County Life</h2>
@@ -8544,7 +8544,7 @@
                   <div class="card-content">
                     <div class="portfolio-image-container"><a href="https://<?php echo DOMAIN; ?>/portfolio/tbow/"><img
                           alt="Photo of Love Street" class="img-fluid mb-2 portfolio-main-image"
-                          src="./portfolio_files/TBowCover.png"></a></div>
+                          src="./portfolio_files/TBowCover.webp"></a></div>
                     <h3>Photography Book<span class="status">in partnership with Brilliant Graphics</span></h3><a
                       href="https://<?php echo DOMAIN; ?>/portfolio/tbow/">
                       <h2 class="inline">Tbow</h2><span> | </span>
@@ -8559,7 +8559,7 @@
                     <div class="portfolio-image-container"><a
                         href="https://<?php echo DOMAIN; ?>/portfolio/penn-color/"><img
                           alt="Photo of Color Dispersions Brochure" class="img-fluid mb-2 portfolio-main-image"
-                          src="./portfolio_files/DispersionsCover.png"></a></div>
+                          src="./portfolio_files/DispersionsCover.webp"></a></div>
                     <h3>Brochure<span class="status">in partnership with Brilliant Graphics</span></h3><a
                       href="https://<?php echo DOMAIN; ?>/portfolio/penn-color/">
                       <h2 class="inline">Penn Color</h2><span> | </span>
@@ -8573,7 +8573,7 @@
                   <div class="card-content">
                     <div class="portfolio-image-container"><a href="https://<?php echo DOMAIN; ?>/portfolio/dvfs/"><img
                           alt="Photo of Delaware Valley Friends School" class="img-fluid mb-2 portfolio-main-image"
-                          src="./portfolio_files/AnnualReport20-21_v4_Cover.jpg"></a></div>
+                          src="./portfolio_files/AnnualReport20-21_v4_Cover.webp"></a></div>
                     <h3>Print Collateral<span class="status"></span></h3><a
                       href="https://<?php echo DOMAIN; ?>/portfolio/dvfs/">
                       <h2 class="inline">Delaware Valley Friends School</h2>
@@ -8587,7 +8587,7 @@
                     <div class="portfolio-image-container"><a
                         href="https://<?php echo DOMAIN; ?>/portfolio/gallery-47-perfume-bottle-auction/"><img
                           alt="Photo of Perfume Bottle Auction" class="img-fluid mb-2 portfolio-main-image"
-                          src="./portfolio_files/PerfumeCover.png"></a></div>
+                          src="./portfolio_files/PerfumeCover.webp"></a></div>
                     <h3>Catalog<span class="status"></span></h3><a
                       href="https://<?php echo DOMAIN; ?>/portfolio/gallery-47-perfume-bottle-auction/">
                       <h2 class="inline">Gallery 47</h2><span> | </span>
@@ -8602,7 +8602,7 @@
                     <div class="portfolio-image-container"><a
                         href="https://<?php echo DOMAIN; ?>/portfolio/sourlands-conservancy-book/"><img
                           alt="Photo of Seeing the Sourlands" class="img-fluid mb-2 portfolio-main-image"
-                          src="./portfolio_files/SourlandsCover.png"></a></div>
+                          src="./portfolio_files/SourlandsCover.webp"></a></div>
                     <h3>Photography Book<span class="status">in partnership with Brilliant Graphics</span></h3><a
                       href="https://<?php echo DOMAIN; ?>/portfolio/sourlands-conservancy-book/">
                       <h2 class="inline">Sourlands Conservancy</h2><span> | </span>
@@ -8617,7 +8617,7 @@
                     <div class="portfolio-image-container"><a
                         href="https://<?php echo DOMAIN; ?>/portfolio/coachs-call-website/"><img
                           alt="Photo of Coach&#39;s Call" class="img-fluid mb-2 portfolio-main-image"
-                          src="./portfolio_files/gatsbyjs-io_golden-crop.png"></a></div>
+                          src="./portfolio_files/gatsbyjs-io_golden-crop.webp"></a></div>
                     <h3>Website<span class="status"> </span></h3><a
                       href="https://<?php echo DOMAIN; ?>/portfolio/coachs-call-website/">
                       <h2 class="inline">Coach's Call</h2>
@@ -8630,7 +8630,7 @@
                   <div class="card-content">
                     <div class="portfolio-image-container"><a
                         href="https://<?php echo DOMAIN; ?>/portfolio/hartzells/"><img alt="Photo of The Iron Collection"
-                          class="img-fluid mb-2 portfolio-main-image" src="./portfolio_files/HartzellCover.png"></a>
+                          class="img-fluid mb-2 portfolio-main-image" src="./portfolio_files/HartzellCover.webp"></a>
                     </div>
                     <h3>Catalog<span class="status"></span></h3><a
                       href="https://<?php echo DOMAIN; ?>/portfolio/hartzells/">
@@ -8646,7 +8646,7 @@
                     <div class="portfolio-image-container"><a
                         href="https://<?php echo DOMAIN; ?>/portfolio/jones-art-studio/"><img
                           alt="Photo of Jones Art Studio" class="img-fluid mb-2 portfolio-main-image"
-                          src="./portfolio_files/JonesArtCover.png"></a></div>
+                          src="./portfolio_files/JonesArtCover.webp"></a></div>
                     <h3>Art Book<span class="status">in partnership with Brilliant Graphics</span></h3><a
                       href="https://<?php echo DOMAIN; ?>/portfolio/jones-art-studio/">
                       <h2 class="inline">Jones Art Studio</h2>
@@ -8724,6 +8724,12 @@
   <script src="./portfolio_files/app-3c9a821799db070428a3.js" async=""></script>
   <script src="./portfolio_files/framework-626f952c4a8c68f4bf53.js" async=""></script>
   <script src="./portfolio_files/webpack-runtime-a3031d37eff3e66bd590.js" async=""></script>
+  <script>
+    document.getElementById('toggle-main-menu-mobile').addEventListener('click', function () {
+      this.classList.toggle('is-active');
+      document.getElementById('main-menu-mobile').classList.toggle('open');
+    });
+  </script>
 </body>
 
 </html>

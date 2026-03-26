@@ -8772,16 +8772,16 @@
               <div class="portfolio-sample">
                 <div class="portfolio-image-container"><img alt="Photo of Delaware Valley Friends School"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - 1dvfs friends_files/AnnualReport20-21_v4_Cover.jpg"></div>
+                    src="./15 East - 1dvfs friends_files/AnnualReport20-21_v4_Cover.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of Delaware Valley Friends School"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - 1dvfs friends_files/AnnualReport20-21_v4_spread1.jpg"></div>
+                    src="./15 East - 1dvfs friends_files/AnnualReport20-21_v4_spread1.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of Delaware Valley Friends School"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - 1dvfs friends_files/AnnualReport20-21_v4_spread2.jpg"></div>
+                    src="./15 East - 1dvfs friends_files/AnnualReport20-21_v4_spread2.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of Delaware Valley Friends School"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - 1dvfs friends_files/AnnualReport20-21_v4_spread3.jpg"></div>
+                    src="./15 East - 1dvfs friends_files/AnnualReport20-21_v4_spread3.webp"></div>
               </div>
             </div>
           </div>
@@ -8854,6 +8854,12 @@
   <script src="./15 East - 1dvfs friends_files/app-3c9a821799db070428a3.js" async=""></script>
   <script src="./15 East - 1dvfs friends_files/framework-626f952c4a8c68f4bf53.js" async=""></script>
   <script src="./15 East - 1dvfs friends_files/webpack-runtime-a3031d37eff3e66bd590.js" async=""></script>
+  <script>
+    document.getElementById('toggle-main-menu-mobile').addEventListener('click', function () {
+      this.classList.toggle('is-active');
+      document.getElementById('main-menu-mobile').classList.toggle('open');
+    });
+  </script>
 </body>
 
 </html>

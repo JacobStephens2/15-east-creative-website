@@ -8884,16 +8884,16 @@
               <div class="portfolio-sample">
                 <div class="portfolio-image-container"><img alt="Photo of Coach&#39;s Call"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - coachs call_files/gatsbyjs-io_golden-crop.png"></div>
+                    src="./15 East - coachs call_files/gatsbyjs-io_golden-crop.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of Coach&#39;s Call"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - coachs call_files/coachscall.gatsbyjs.io_about.png"></div>
+                    src="./15 East - coachs call_files/coachscall.gatsbyjs.io_about.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of Coach&#39;s Call"
-                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - coachs call_files/homepage-mobile.png">
+                    class="img-fluid mb-2 portfolio-main-image" src="./15 East - coachs call_files/homepage-mobile.webp">
                 </div>
                 <div class="portfolio-image-container"><img alt="Photo of Coach&#39;s Call"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - coachs call_files/national-connections.png"></div>
+                    src="./15 East - coachs call_files/national-connections.webp"></div>
               </div>
             </div>
           </div>
@@ -8965,6 +8965,12 @@
   <script src="./15 East - coachs call_files/app-3c9a821799db070428a3.js" async=""></script>
   <script src="./15 East - coachs call_files/framework-626f952c4a8c68f4bf53.js" async=""></script>
   <script src="./15 East - coachs call_files/webpack-runtime-a3031d37eff3e66bd590.js" async=""></script>
+  <script>
+    document.getElementById('toggle-main-menu-mobile').addEventListener('click', function () {
+      this.classList.toggle('is-active');
+      document.getElementById('main-menu-mobile').classList.toggle('open');
+    });
+  </script>
 </body>
 
 </html>

@@ -8468,8 +8468,8 @@
                     <p>But that’s what we are here for! To take the ideas that live in your brain and make them into
                       real designs that you can hold in your hands and see on the&nbsp;web.</p>
                   </div>
-                </div><img alt="Home" class="intro-image intro-image-absolute 
-  intro-image-hide-mobile" src="./index_files/mel-and-jacob-desk-circle.png">
+                </div><img alt="Home" class="intro-image intro-image-absolute
+  intro-image-hide-mobile" src="./index_files/mel-and-jacob-desk-circle.webp">
               </div>
             </div>
           </div>
@@ -8499,17 +8499,17 @@
               <p>We get results, too.</p>
               <div class="five-col-wide-row mb-2">
                 <div><a href="https://<?php echo DOMAIN; ?>/portfolio/roger-raepple-remember/"><img class="homepage-sample"
-                      src="./index_files/RogerCover.png" alt="Roger Raepple Book Dust cover"></a></div>
+                      src="./index_files/RogerCover.webp" alt="Roger Raepple Book Dust cover"></a></div>
                 <div><a href="https://<?php echo DOMAIN; ?>/portfolio/archmere-academy-magazine/"><img
-                      class="homepage-sample" src="./index_files/ArchmereCover.png"
+                      class="homepage-sample" src="./index_files/ArchmereCover.webp"
                       alt="Archmere Academy magazine cover"></a></div>
                 <div><a href="https://<?php echo DOMAIN; ?>/portfolio/gallery-47-perfume-bottle-auction/"><img
-                      class="homepage-sample" src="./index_files/PerfumeCover.png"
+                      class="homepage-sample" src="./index_files/PerfumeCover.webp"
                       alt="Cover of a catalog designed for a Gallery 47 perfume bottle auction"></a></div>
                 <div><a href="https://<?php echo DOMAIN; ?>/portfolio/coachs-call-website/"><img class="homepage-sample"
-                      src="./index_files/gatsbyjs-io_golden-crop.png" alt="Coach&#39;s Call desktop homepage"></a></div>
+                      src="./index_files/gatsbyjs-io_golden-crop.webp" alt="Coach&#39;s Call desktop homepage"></a></div>
                 <div><a href="https://<?php echo DOMAIN; ?>/portfolio/chester-county-life-magazine/"><img
-                      class="homepage-sample" src="./index_files/CCLCover.png"
+                      class="homepage-sample" src="./index_files/CCLCover.webp"
                       alt="Chester County Life Magazine cover"></a></div>
               </div><a href="https://<?php echo DOMAIN; ?>/portfolio/"><button class="button-component"
                   name="SEE MORE OF OUR WORK">SEE MORE OF OUR WORK<div id="triangle-right"></div></button></a>
@@ -8828,6 +8828,12 @@
   <script src="./index_files/app-3c9a821799db070428a3.js" async=""></script>
   <script src="./index_files/framework-626f952c4a8c68f4bf53.js" async=""></script>
   <script src="./index_files/webpack-runtime-a3031d37eff3e66bd590.js" async=""></script>
+  <script>
+    document.getElementById('toggle-main-menu-mobile').addEventListener('click', function () {
+      this.classList.toggle('is-active');
+      document.getElementById('main-menu-mobile').classList.toggle('open');
+    });
+  </script>
 </body>
 
 </html>

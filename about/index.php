@@ -8057,7 +8057,16 @@
 
     .capabilities-container {
       display: grid;
-      grid-template-columns: 1fr 1fr
+      grid-template-columns: 1fr
+    }
+
+    @media (min-width:768px) {
+      .capabilities-container {
+        grid-template-columns: 1fr 1fr
+      }
+      .capabilities-list {
+        columns: 2
+      }
     }
 
     span.status {
@@ -8482,7 +8491,7 @@
           <div class="col-12 col-md-12">
             <div class="team team-summary team-summary-large">
               <div class="team-image col-md-6 col-sm-12"><img alt="photo of MELODEE DILL STEPHENS | DESIGNER"
-                  class="img-fluid mb-2 profile-image" src="./About_files/Mel_Brand046-mel-square.jpg"></div>
+                  class="img-fluid mb-2 profile-image" src="./About_files/Mel_Brand046-mel-square.webp"></div>
               <div class="team-meta col-md-6 col-sm-12">
                 <h2 class="team-name">MELODEE DILL STEPHENS | DESIGNER</h2>
                 <p class="team-description">Experienced. Versatile. Detail oriented.</p>
@@ -8505,7 +8514,7 @@
             <div class="team team-summary team-summary-large">
               <div class="team-image col-md-6 col-sm-12"><img
                   alt="photo of JACOB STEPHENS  |  WEB&amp;nbsp;DESIGNER&amp;nbsp;AND&amp;nbsp;DEVELOPER"
-                  class="img-fluid mb-2 profile-image" src="./About_files/Mel_Brand040-jacob-square.jpg"></div>
+                  class="img-fluid mb-2 profile-image" src="./About_files/jacob_profile_image_2026-03-26_edit.webp"></div>
               <div class="team-meta col-md-6 col-sm-12">
                 <h2 class="team-name">JACOB STEPHENS | WEB&nbsp;DESIGNER&nbsp;AND&nbsp;DEVELOPER</h2>
                 <p class="team-description">Learner. Strategic. Creative.</p>
@@ -8514,8 +8523,8 @@
                     man is all about data and detail. He takes beautiful design and makes it live and breathe on the
                     web. He keeps large projects moving through our design&nbsp;process.</p>
                   <p>Unsurprisingly, Jacob uses his technical mind in the off hours. He is fond of strategic board games
-                    and would be glad for you to join him in a game of Tigris &amp; Euphrates. He lives in Lancaster, PA
-                    with his wife Kendel Lyn. Don’t be surprised if he comes to a meeting with three game&nbsp;options.
+                    and would be glad for you to join him in a game of Tigris &amp; Euphrates. He lives in Lancaster, PA.
+                    Don’t be surprised if he comes to a meeting with three game&nbsp;options.
                   </p>
                 </div><a href="mailto:jacob@stewardgoods.com"><button class="button-component" name="Email Jacob">Email
                     Jacob<div id="triangle-right"></div></button></a>
@@ -8527,7 +8536,7 @@
             <div class="capabilities-container">
               <div>
                 <h3>Print</h3>
-                <ul style="columns: 2;">
+                <ul class="capabilities-list">
                   <li>Photography/Art Books</li>
                   <li>Catalogs</li>
                   <li>Magazines</li>
@@ -8536,7 +8545,7 @@
               </div>
               <div>
                 <h3>Web | Digital</h3>
-                <ul style="columns: 2;">
+                <ul class="capabilities-list">
                   <li>Website Design</li>
                   <li>WordPress</li>
                   <li>Website Updates</li>
@@ -8834,6 +8843,12 @@
   <script src="./About_files/app-3c9a821799db070428a3.js" async=""></script>
   <script src="./About_files/framework-626f952c4a8c68f4bf53.js" async=""></script>
   <script src="./About_files/webpack-runtime-a3031d37eff3e66bd590.js" async=""></script>
+  <script>
+    document.getElementById('toggle-main-menu-mobile').addEventListener('click', function () {
+      this.classList.toggle('is-active');
+      document.getElementById('main-menu-mobile').classList.toggle('open');
+    });
+  </script>
 </body>
 
 </html>

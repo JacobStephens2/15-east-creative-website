@@ -8596,17 +8596,17 @@
               <div class="content margin-top"></div>
               <div class="portfolio-sample">
                 <div class="portfolio-image-container"><img alt="Photo of The Iron Collection"
-                    class="img-fluid mb-2 portfolio-main-image" src="./hartzells_files/HartzellCover.png"></div>
+                    class="img-fluid mb-2 portfolio-main-image" src="./hartzells_files/HartzellCover.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of The Iron Collection"
-                    class="img-fluid mb-2 portfolio-main-image" src="./hartzells_files/HartzellSpread1.png"></div>
+                    class="img-fluid mb-2 portfolio-main-image" src="./hartzells_files/HartzellSpread1.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of The Iron Collection"
-                    class="img-fluid mb-2 portfolio-main-image" src="./hartzells_files/HartzellSpread2.png"></div>
+                    class="img-fluid mb-2 portfolio-main-image" src="./hartzells_files/HartzellSpread2.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of The Iron Collection"
-                    class="img-fluid mb-2 portfolio-main-image" src="./hartzells_files/HartzellSpread3.png"></div>
+                    class="img-fluid mb-2 portfolio-main-image" src="./hartzells_files/HartzellSpread3.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of The Iron Collection"
-                    class="img-fluid mb-2 portfolio-main-image" src="./hartzells_files/HartzellSpread4.png"></div>
+                    class="img-fluid mb-2 portfolio-main-image" src="./hartzells_files/HartzellSpread4.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of The Iron Collection"
-                    class="img-fluid mb-2 portfolio-main-image" src="./hartzells_files/HartzellSpread5.png"></div>
+                    class="img-fluid mb-2 portfolio-main-image" src="./hartzells_files/HartzellSpread5.webp"></div>
               </div>
             </div>
           </div>
@@ -8677,6 +8677,12 @@
   <script src="./hartzells_files/app-3c9a821799db070428a3.js" async=""></script>
   <script src="./hartzells_files/framework-626f952c4a8c68f4bf53.js" async=""></script>
   <script src="./hartzells_files/webpack-runtime-a3031d37eff3e66bd590.js" async=""></script>
+  <script>
+    document.getElementById('toggle-main-menu-mobile').addEventListener('click', function () {
+      this.classList.toggle('is-active');
+      document.getElementById('main-menu-mobile').classList.toggle('open');
+    });
+  </script>
 </body>
 
 </html>

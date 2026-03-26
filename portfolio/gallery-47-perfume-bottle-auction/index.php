@@ -8813,22 +8813,22 @@
               <div class="portfolio-sample">
                 <div class="portfolio-image-container"><img alt="Photo of Perfume Bottle Auction"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - perfume bottle catalog_files/PerfumeCover.png"></div>
+                    src="./15 East - perfume bottle catalog_files/PerfumeCover.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of Perfume Bottle Auction"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - perfume bottle catalog_files/PerfumeSpread1.png"></div>
+                    src="./15 East - perfume bottle catalog_files/PerfumeSpread1.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of Perfume Bottle Auction"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - perfume bottle catalog_files/PerfumeSpread2.png"></div>
+                    src="./15 East - perfume bottle catalog_files/PerfumeSpread2.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of Perfume Bottle Auction"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - perfume bottle catalog_files/PerfumeSpread3.png"></div>
+                    src="./15 East - perfume bottle catalog_files/PerfumeSpread3.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of Perfume Bottle Auction"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - perfume bottle catalog_files/PerfumeSpread4.png"></div>
+                    src="./15 East - perfume bottle catalog_files/PerfumeSpread4.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of Perfume Bottle Auction"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - perfume bottle catalog_files/PerfumeSpread5.png"></div>
+                    src="./15 East - perfume bottle catalog_files/PerfumeSpread5.webp"></div>
               </div>
             </div>
           </div>
@@ -8902,6 +8902,12 @@
   <script src="./15 East - perfume bottle catalog_files/app-3c9a821799db070428a3.js" async=""></script>
   <script src="./15 East - perfume bottle catalog_files/framework-626f952c4a8c68f4bf53.js" async=""></script>
   <script src="./15 East - perfume bottle catalog_files/webpack-runtime-a3031d37eff3e66bd590.js" async=""></script>
+  <script>
+    document.getElementById('toggle-main-menu-mobile').addEventListener('click', function () {
+      this.classList.toggle('is-active');
+      document.getElementById('main-menu-mobile').classList.toggle('open');
+    });
+  </script>
 </body>
 
 </html>

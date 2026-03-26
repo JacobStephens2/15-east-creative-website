@@ -8567,16 +8567,16 @@
               <div class="portfolio-sample">
                 <div class="portfolio-image-container"><img alt="Photo of The Agnes Irwin School"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - agnes_files/DivisionBrochure_20-21_Page_01.png"></div>
+                    src="./15 East - agnes_files/DivisionBrochure_20-21_Page_01.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of The Agnes Irwin School"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - agnes_files/Athletics20-21_Page_2spread.jpg"></div>
+                    src="./15 East - agnes_files/Athletics20-21_Page_2spread.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of The Agnes Irwin School"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - agnes_files/SpeakerSeries_20-21_Page_1.jpg"></div>
+                    src="./15 East - agnes_files/SpeakerSeries_20-21_Page_1.webp"></div>
                 <div class="portfolio-image-container"><img alt="Photo of The Agnes Irwin School"
                     class="img-fluid mb-2 portfolio-main-image"
-                    src="./15 East - agnes_files/HowToApply_20-21_spread.jpg"></div>
+                    src="./15 East - agnes_files/HowToApply_20-21_spread.webp"></div>
               </div>
             </div>
           </div>
@@ -8648,6 +8648,12 @@
   <script src="./15 East - agnes_files/app-3c9a821799db070428a3.js" async=""></script>
   <script src="./15 East - agnes_files/framework-626f952c4a8c68f4bf53.js" async=""></script>
   <script src="./15 East - agnes_files/webpack-runtime-a3031d37eff3e66bd590.js" async=""></script>
+  <script>
+    document.getElementById('toggle-main-menu-mobile').addEventListener('click', function () {
+      this.classList.toggle('is-active');
+      document.getElementById('main-menu-mobile').classList.toggle('open');
+    });
+  </script>
 </body>
 
 </html>
