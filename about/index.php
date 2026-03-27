@@ -8507,6 +8507,7 @@
                     She lives with her husband Mark and two (very adorable)&nbsp;dogs.</p>
                 </div><a href="mailto:melodee.stephens@me.com"><button class="button-component"
                     name="Email Melodee">Email Melodee<div id="triangle-right"></div></button></a>
+                <a href="https://<?php echo DOMAIN; ?>/portfolio/"><button class="button-component" name="Melodee's Portfolio">Portfolio<div id="triangle-right"></div></button></a>
               </div>
             </div>
           </div>
